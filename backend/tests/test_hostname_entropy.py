@@ -226,6 +226,10 @@ def _tranco_labels(n: int) -> list[str]:
 def _audit_data(name: str) -> dict:
     path = (Path(he.__file__).resolve().parents[1]
             / "docs" / "Detection_Accuracy_Audit" / "data" / name)
+    if not path.exists():
+        # The audit snapshots are local-only (docs/ is not published), so a
+        # public checkout runs every other entropy test and skips this gate.
+        pytest.skip(f"audit snapshot {name} is not in this checkout")
     return json.loads(path.read_text(encoding="utf-8"))
 
 

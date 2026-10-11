@@ -1,11 +1,23 @@
-# Minimal dependency closure for the unit tests (backend/tests): only what
-# importing aggregator.py and its apis/* modules needs. The heavy runtime deps
-# (openai-whisper/torch, opencv, scikit-learn/xgboost, reportlab, …) are NOT
-# required — every ml.* import on the scan path is guard-wrapped and degrades
-# to heuristics-only, which is exactly what the pure-function tests exercise.
+# Dependency closure for the unit tests (backend/tests). The heaviest runtime
+# deps (openai-whisper/torch, transformers, opencv, reportlab, …) are NOT
+# required: those imports are guard-wrapped and the tests skip or degrade.
 pytest
 requests
 beautifulsoup4
 confusable_homoglyphs
 rapidfuzz
 tldextract
+
+# Imported at module level by tests (image origin, voice and OCR scoring).
+pillow==12.2.0
+numpy==2.4.6
+pytesseract==0.3.13
+cryptography==48.0.0
+
+# The full-scan and char-model tests load the bundled ML model, so these stay
+# pinned to the versions it was trained with (same pins as requirements.txt).
+scikit-learn==1.9.0
+xgboost==3.2.0
+joblib==1.5.3
+scipy==1.17.1
+pandas==3.0.3
