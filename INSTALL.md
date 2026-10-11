@@ -34,8 +34,8 @@ sudo apt install tesseract-ocr libzbar0 ffmpeg
 ## 2. Get the code
 
 ```bash
-git clone https://github.com/smitlalvadiya7-ui/NexGuard_V_2.0.git
-cd NexGuard_V_2.0
+git clone https://github.com/smitlalvadiya7-ui/NexGuard_v-2.0.git
+cd NexGuard_v-2.0
 ```
 
 ---
