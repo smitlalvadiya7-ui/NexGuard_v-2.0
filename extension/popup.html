@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>NexGuard AI</title>
+
+  <style>
+
+    body{
+
+      width:320px;
+
+      background:#0F172A;
+
+      color:white;
+
+      font-family:Arial;
+
+      padding:20px;
+    }
+
+    h1{
+
+      color:#00E5FF;
+
+      font-size:24px;
+
+      margin-bottom:20px;
+    }
+
+    .url-box{
+
+      background:#111827;
+
+      padding:12px;
+
+      border-radius:10px;
+
+      word-break:break-all;
+
+      margin-bottom:20px;
+
+      border:1px solid #1E293B;
+    }
+
+    .scan-btn{
+
+      width:100%;
+
+      padding:14px;
+
+      border:none;
+
+      border-radius:10px;
+
+      background:#06B6D4;
+
+      color:white;
+
+      font-weight:bold;
+
+      cursor:pointer;
+    }
+
+    .result{
+
+      margin-top:20px;
+
+      padding:15px;
+
+      border-radius:10px;
+
+      background:#111827;
+
+      border-left:5px solid #1E293B;
+    }
+
+    .result.safe-border{ border-left-color:#22C55E; }
+    .result.suspicious-border{ border-left-color:#F59E0B; }
+    .result.malicious-border{ border-left-color:#EF4444; }
+
+    .safe{
+      color:#22C55E;
+    }
+
+    .suspicious{
+      color:#F59E0B;
+    }
+
+    .malicious{
+      color:#EF4444;
+    }
+
+    /* E3 — rich result */
+    .verdict-row{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .verdict-row h2{ margin:0; font-size:20px; }
+    .conf-chip{
+      padding:2px 8px;
+      border-radius:999px;
+      background:#0F172A;
+      border:1px solid #1E293B;
+      color:#94A3B8;
+      font-size:11px;
+      white-space:nowrap;
+    }
+    .risk-bar{
+      height:6px;
+      border-radius:999px;
+      background:#0F172A;
+      margin:10px 0 4px;
+      overflow:hidden;
+    }
+    .risk-fill{ height:100%; width:0%; border-radius:999px; background:#22C55E; }
+    .risk-fill.suspicious-fill{ background:#F59E0B; }
+    .risk-fill.malicious-fill{ background:#EF4444; }
+    .score-line{ color:#94A3B8; font-size:12px; margin:0 0 8px; }
+    .summary{ font-size:13px; margin:8px 0; }
+    .result h3{
+      color:#64748B;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+      margin:12px 0 6px;
+    }
+    .reason-list, .source-list{ list-style:none; margin:0; padding:0; font-size:12px; }
+    .reason-list li{
+      padding:3px 0 3px 14px;
+      position:relative;
+      color:#CBD5E1;
+    }
+    .reason-list li::before{ content:"•"; position:absolute; left:0; color:#64748B; }
+    .source-list li{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      padding:2px 0;
+      color:#E2E8F0;
+    }
+    .source-status{ color:#22C55E; }
+    .source-status.flagged{ color:#EF4444; }
+    .report-btn{
+      width:100%;
+      margin-top:12px;
+      padding:8px;
+      border:1px solid #1E293B;
+      border-radius:8px;
+      background:transparent;
+      color:#64748B;
+      font-size:12px;
+      cursor:pointer;
+    }
+    .report-btn:hover{ color:#E2E8F0; border-color:#334155; }
+    .report-btn:disabled{ cursor:default; color:#475569; }
+    .report-status{ font-size:12px; color:#22C55E; min-height:14px; margin:6px 0 0; }
+    .scan-error{ color:#F59E0B; font-size:13px; margin-top:12px; display:none; }
+
+    /* E10 — live-protection status strip */
+    .live-status{
+      display:flex;
+      align-items:flex-start;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:10px;
+      background:#111827;
+      border:1px solid #1E293B;
+      font-size:12px;
+      color:#CBD5E1;
+      margin-bottom:14px;
+      line-height:1.4;
+    }
+    .live-dot{
+      flex:none;
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      margin-top:3px;
+      background:#64748B;
+    }
+    .live-status.safe .live-dot{ background:#22C55E; }
+    .live-status.warn .live-dot{ background:#F59E0B; }
+    .live-status.danger .live-dot{ background:#EF4444; }
+    .live-status.warn{ border-color:#F59E0B; }
+    .live-status.danger{ border-color:#EF4444; }
+
+    /* C4 — Ask NexGuard chat */
+    .chat{
+      margin-top:16px;
+      padding:12px;
+      border-radius:10px;
+      background:#111827;
+      border:1px solid #1E293B;
+    }
+    .chat h3{
+      color:#64748B;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+      margin:0 0 8px;
+    }
+    .chat-log{
+      max-height:180px;
+      overflow-y:auto;
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-bottom:8px;
+    }
+    .chat-log:empty{ display:none; }
+    .chat-msg{
+      font-size:12px;
+      line-height:1.45;
+      padding:7px 9px;
+      border-radius:8px;
+      white-space:pre-wrap;
+      word-break:break-word;
+    }
+    .chat-msg.user{
+      background:#0F172A;
+      border:1px solid #1E293B;
+      color:#94A3B8;
+      align-self:flex-end;
+      max-width:90%;
+    }
+    .chat-msg.bot{
+      background:#0B1220;
+      border:1px solid #1E293B;
+      color:#E2E8F0;
+    }
+    .chat-chip{
+      display:inline-block;
+      margin-bottom:5px;
+      padding:1px 8px;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:bold;
+      border:1px solid #1E293B;
+    }
+    .chat-chip.safe{ color:#22C55E; border-color:#22C55E; }
+    .chat-chip.suspicious{ color:#F59E0B; border-color:#F59E0B; }
+    .chat-chip.malicious{ color:#EF4444; border-color:#EF4444; }
+    .chat-chip.unknown{ color:#94A3B8; }
+    .chat-page-btn{
+      width:100%;
+      margin-bottom:8px;
+      padding:8px;
+      border:1px solid #06B6D4;
+      border-radius:8px;
+      background:transparent;
+      color:#7DD3FC;
+      font-size:12px;
+      cursor:pointer;
+    }
+    .chat-page-btn:hover{ background:#0F172A; }
+    .chat-input-row{ display:flex; gap:6px; }
+    .chat-input-row input{
+      flex:1;
+      box-sizing:border-box;
+      background:#0F172A;
+      border:1px solid #1E293B;
+      border-radius:8px;
+      color:#E2E8F0;
+      padding:8px 10px;
+      font-size:12px;
+      min-width:0;
+    }
+    .chat-input-row input:focus{ outline:2px solid #06B6D4; }
+    .chat-send{
+      padding:8px 14px;
+      border:none;
+      border-radius:8px;
+      background:#1E293B;
+      color:#7DD3FC;
+      font-weight:bold;
+      font-size:12px;
+      cursor:pointer;
+    }
+    .chat-send:disabled{ color:#475569; cursor:default; }
+
+    /* E2 — account / sign-in */
+    .account{
+      margin-top:16px;
+      padding:12px;
+      border-radius:10px;
+      background:#111827;
+      border:1px solid #1E293B;
+      font-size:13px;
+    }
+    .account input{
+      width:100%;
+      box-sizing:border-box;
+      background:#0F172A;
+      border:1px solid #1E293B;
+      border-radius:8px;
+      color:#E2E8F0;
+      padding:8px 10px;
+      font-size:13px;
+      margin-bottom:8px;
+    }
+    .account input:focus{ outline:2px solid #06B6D4; }
+    .signin-btn{
+      width:100%;
+      padding:9px;
+      border:none;
+      border-radius:8px;
+      background:#1E293B;
+      color:#7DD3FC;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    .auth-err{ color:#EF4444; font-size:12px; min-height:14px; margin:6px 0 0; }
+    .who{ color:#94A3B8; }
+    .who b{ color:#E2E8F0; }
+    .tier-badge{
+      display:inline-block;
+      padding:1px 8px;
+      border-radius:999px;
+      background:#0F172A;
+      border:1px solid #06B6D4;
+      color:#7DD3FC;
+      font-size:11px;
+      margin-left:6px;
+      text-transform:uppercase;
+    }
+    .signout-link{ color:#64748B; font-size:12px; text-decoration:none; float:right; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>NexGuard AI</h1>
+
+  <!-- E10 — live-protection status for THIS tab (from the background's
+       per-tab state), so a normal page never looks like a dead extension. -->
+  <div class="live-status" id="liveStatus" style="display:none;">
+    <span class="live-dot" id="liveDot"></span>
+    <span id="liveText"></span>
+  </div>
+
+  <div
+    class="url-box"
+    id="currentUrl"
+  >
+    Loading...
+  </div>
+
+  <button
+    class="scan-btn"
+    id="scanBtn"
+  >
+    Scan Website
+  </button>
+
+  <p class="scan-error" id="scanError"></p>
+
+  <div
+    class="result"
+    id="resultBox"
+    style="display:none;"
+  >
+
+    <div class="verdict-row">
+      <h2 id="verdict"></h2>
+      <span class="conf-chip" id="confidence" style="display:none;"></span>
+    </div>
+
+    <div class="risk-bar"><div class="risk-fill" id="riskFill"></div></div>
+    <p class="score-line" id="score"></p>
+
+    <p class="summary" id="summary" style="display:none;"></p>
+
+    <div id="whySection" style="display:none;">
+      <h3>Why this verdict</h3>
+      <ul class="reason-list" id="reasonList"></ul>
+    </div>
+
+    <div id="sourcesSection" style="display:none;">
+      <h3>Threat intelligence sources</h3>
+      <ul class="source-list" id="sourceList"></ul>
+    </div>
+
+    <button class="report-btn" id="reportBtn">Report wrong verdict</button>
+    <p class="report-status" id="reportStatus"></p>
+
+  </div>
+
+  <!-- C4 — Ask NexGuard: the support bot with REAL scan tools, in the popup.
+       A pasted link runs the full URL scan; a pasted message runs the email
+       analyzer; anything else gets the FAQ answer. -->
+  <div class="chat" id="chatBox">
+    <h3>Ask NexGuard</h3>
+    <div class="chat-log" id="chatLog"></div>
+    <button class="chat-page-btn" id="askPageBtn" style="display:none;">Is this page safe?</button>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Paste a link or ask a question…" />
+      <button class="chat-send" id="chatSendBtn">Ask</button>
+    </div>
+  </div>
+
+  <!-- E2 — account: shows who is signed in, or a small sign-in form -->
+  <div class="account" id="accountBox">
+
+    <div id="signedIn" style="display:none;">
+      <a class="signout-link" id="signOutLink" href="#">Sign out</a>
+      <span class="who">Signed in as <b id="whoEmail"></b></span>
+      <span class="tier-badge" id="whoTier"></span>
+    </div>
+
+    <div id="signedOut" style="display:none;">
+      <input type="email" id="authEmail" placeholder="Email" autocomplete="username" />
+      <input type="password" id="authPassword" placeholder="Password" autocomplete="current-password" />
+      <button class="signin-btn" id="signInBtn">Sign in</button>
+      <p class="auth-err" id="authError"></p>
+    </div>
+
+  </div>
+
+  <p style="margin-top:16px;text-align:right;">
+    <a id="settingsLink" href="#" style="color:#64748B;font-size:12px;text-decoration:none;">⚙ Settings</a>
+  </p>
+
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+  <script src="tab_state.js"></script>
+  <script src="popup_render.js"></script>
+  <script src="chat.js"></script>
+  <script src="popup.js"></script>
+
+</body>
+
+</html>

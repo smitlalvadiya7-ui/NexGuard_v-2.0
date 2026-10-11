@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NexGuard AI — Scan Result</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(1200px 600px at 50% -10%, #15233f, #070b17 60%);
+      color: #E2E8F0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    .wrap { width: 100%; max-width: 640px; }
+    h1 { color: #00E5FF; font-size: 22px; margin: 0 0 4px; }
+    .sub { color: #64748B; font-size: 12px; margin: 0 0 18px; }
+    .target {
+      background: #111827;
+      border: 1px solid #1E293B;
+      border-radius: 10px;
+      padding: 12px 14px;
+      word-break: break-all;
+      font-family: monospace;
+      font-size: 13px;
+      color: #CBD5E1;
+      margin-bottom: 16px;
+    }
+    .note { color: #94A3B8; font-size: 12px; margin: 0 0 12px; }
+    #status { color: #7DD3FC; font-size: 14px; }
+    .scan-error { color: #F59E0B; font-size: 14px; display: none; }
+
+    .result {
+      padding: 16px;
+      border-radius: 12px;
+      background: #111827;
+      border: 1px solid #1E293B;
+      border-left: 5px solid #1E293B;
+      display: none;
+    }
+    .result.safe-border { border-left-color: #22C55E; }
+    .result.suspicious-border { border-left-color: #F59E0B; }
+    .result.malicious-border { border-left-color: #EF4444; }
+    .safe { color: #22C55E; }
+    .suspicious { color: #F59E0B; }
+    .malicious { color: #EF4444; }
+    .verdict-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .verdict-row h2 { margin: 0; font-size: 24px; }
+    .conf-chip {
+      padding: 2px 10px; border-radius: 999px; background: #0F172A;
+      border: 1px solid #1E293B; color: #94A3B8; font-size: 12px; white-space: nowrap;
+    }
+    .risk-bar { height: 8px; border-radius: 999px; background: #0F172A; margin: 12px 0 4px; overflow: hidden; }
+    .risk-fill { height: 100%; width: 0%; border-radius: 999px; background: #22C55E; }
+    .risk-fill.suspicious-fill { background: #F59E0B; }
+    .risk-fill.malicious-fill { background: #EF4444; }
+    .score-line { color: #94A3B8; font-size: 13px; margin: 0 0 10px; }
+    .summary { font-size: 14px; margin: 10px 0; }
+    .result h3 {
+      color: #64748B; font-size: 12px; text-transform: uppercase;
+      letter-spacing: 0.5px; margin: 14px 0 6px;
+    }
+    .reason-list, .source-list { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+    .reason-list li { padding: 4px 0 4px 16px; position: relative; color: #CBD5E1; }
+    .reason-list li::before { content: "•"; position: absolute; left: 0; color: #64748B; }
+    .source-list li { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; color: #E2E8F0; }
+    .source-status { color: #22C55E; }
+    .source-status.flagged { color: #EF4444; }
+    .report-btn {
+      width: 100%; margin-top: 14px; padding: 10px; border: 1px solid #1E293B;
+      border-radius: 8px; background: transparent; color: #64748B; font-size: 13px; cursor: pointer;
+    }
+    .report-btn:hover { color: #E2E8F0; border-color: #334155; }
+    .report-btn:disabled { cursor: default; color: #475569; }
+    .report-status { font-size: 13px; color: #22C55E; min-height: 16px; margin: 8px 0 0; }
+    .foot { text-align: center; margin-top: 20px; font-size: 11px; color: #475569; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>NexGuard AI</h1>
+    <p class="sub" id="modeLabel">Scan result</p>
+
+    <div class="target" id="target">—</div>
+    <p class="note" id="note" style="display:none;"></p>
+
+    <p class="note" id="originLine" style="display:none;"></p>
+
+    <p id="status">Scanning…</p>
+    <p class="scan-error" id="scanError"></p>
+
+    <div class="result" id="resultBox">
+      <div class="verdict-row">
+        <h2 id="verdict"></h2>
+        <span class="conf-chip" id="confidence" style="display:none;"></span>
+      </div>
+      <div class="risk-bar"><div class="risk-fill" id="riskFill"></div></div>
+      <p class="score-line" id="score"></p>
+      <p class="summary" id="summary" style="display:none;"></p>
+      <div id="whySection" style="display:none;">
+        <h3>Why this verdict</h3>
+        <ul class="reason-list" id="reasonList"></ul>
+      </div>
+      <div id="sourcesSection" style="display:none;">
+        <h3>Threat intelligence sources</h3>
+        <ul class="source-list" id="sourceList"></ul>
+      </div>
+      <button class="report-btn" id="reportBtn">Report wrong verdict</button>
+      <p class="report-status" id="reportStatus"></p>
+    </div>
+
+    <div class="foot">NexGuard AI Cyber Defense Platform · Right-click scan</div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+  <script src="popup_render.js"></script>
+  <script src="context_scan.js"></script>
+  <script src="image_origin_line.js"></script>
+  <script src="result.js"></script>
+</body>
+</html>

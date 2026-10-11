@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Print / "Save as PDF" — hide chrome so the dashboard prints as a clean
+   summary sheet (WORK_PLAN Task 7). */
+@media print {
+  .no-print,
+  aside {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  main {
+    overflow: visible !important;
+  }
+}

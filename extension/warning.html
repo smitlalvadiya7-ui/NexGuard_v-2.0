@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>⚠ NexGuard AI — Threat Blocked</title>
+  <style>
+    :root { --danger:#ef4444; --warn:#f59e0b; --cyan:#00e5ff; --muted:#94a3b8; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: radial-gradient(1200px 600px at 50% -10%, #15233f, #070b17 60%);
+      color: #e2e8f0; font-family: -apple-system, Segoe UI, Arial, sans-serif;
+      display: flex; align-items: center; justify-content: center; padding: 24px;
+    }
+    .box {
+      width: 100%; max-width: 640px; background: #0c1424; border: 1px solid rgba(239,68,68,.5);
+      border-radius: 22px; padding: 40px; box-shadow: 0 20px 80px rgba(0,0,0,.6);
+    }
+    .ico { font-size: 56px; text-align: center; }
+    h1 { color: var(--danger); text-align: center; margin: 10px 0 6px; font-size: 30px; letter-spacing: .5px; }
+    .sub { text-align: center; color: var(--muted); font-size: 15px; margin-bottom: 26px; }
+    .meta { display: flex; gap: 14px; margin-bottom: 22px; }
+    .score-card {
+      flex: 0 0 130px; text-align: center; background: #111a2e; border: 1px solid rgba(239,68,68,.35);
+      border-radius: 16px; padding: 18px 10px;
+    }
+    .score-num { font-size: 44px; font-weight: 800; color: var(--danger); line-height: 1; }
+    .score-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; }
+    .verdict-pill {
+      display: inline-block; font-weight: 800; font-size: 13px; padding: 5px 12px; border-radius: 20px;
+      background: rgba(239,68,68,.15); color: var(--danger); border: 1px solid rgba(239,68,68,.4);
+    }
+    .verdict-pill.susp { background: rgba(245,158,11,.15); color: var(--warn); border-color: rgba(245,158,11,.4); }
+    .url {
+      flex: 1; background: #111a2e; border: 1px solid #1e293b; border-radius: 16px; padding: 14px 16px;
+      word-break: break-all; font-family: monospace; font-size: 13px; color: #cbd5e1; overflow: hidden;
+    }
+    .url .url-lbl { font-family: inherit; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .reasons-title { font-size: 13px; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+    ul.reasons { list-style: none; padding: 0; margin: 0 0 24px; }
+    ul.reasons li { background: #111a2e; border-left: 3px solid var(--danger); border-radius: 8px;
+      padding: 9px 13px; margin-bottom: 8px; font-size: 13px; color: #cbd5e1; }
+    ul.reasons li.empty { border-left-color: var(--muted); color: var(--muted); }
+    .btns { display: flex; gap: 12px; }
+    button {
+      flex: 1; padding: 14px; border: none; border-radius: 12px; font-weight: 700; font-size: 15px; cursor: pointer;
+      transition: transform .08s ease, opacity .15s ease;
+    }
+    button:active { transform: scale(.98); }
+    .btn-safe { background: var(--cyan); color: #04121f; }
+    .btn-proceed { background: transparent; color: var(--muted); border: 1px solid #334155; }
+    .btn-proceed:hover { color: #e2e8f0; border-color: var(--muted); }
+    .allow-row { text-align: center; margin-top: 16px; font-size: 12px; color: var(--muted); }
+    .allow-row label { cursor: pointer; }
+    .foot { text-align: center; margin-top: 22px; font-size: 11px; color: #475569; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="ico">🛡️</div>
+    <h1>Dangerous Site Blocked</h1>
+    <div class="sub">NexGuard AI flagged this page before it could load.</div>
+
+    <div class="meta">
+      <div class="score-card">
+        <div class="score-num" id="score">—</div>
+        <div class="score-lbl">Risk Score</div>
+        <div style="margin-top:10px"><span class="verdict-pill" id="verdict">—</span></div>
+      </div>
+      <div class="url">
+        <div class="url-lbl">Blocked URL</div>
+        <span id="target">—</span>
+      </div>
+    </div>
+
+    <div class="reasons-title">Why this was flagged</div>
+    <ul class="reasons" id="reasons"></ul>
+
+    <div class="btns">
+      <button class="btn-safe" id="backBtn">← Back to safety</button>
+      <button class="btn-proceed" id="proceedBtn">Proceed anyway (not recommended)</button>
+    </div>
+    <div class="allow-row">
+      <label><input type="checkbox" id="alwaysAllow"> Always allow this site (add to whitelist)</label>
+    </div>
+
+    <div class="foot">NexGuard AI Cyber Defense Platform · For your protection</div>
+  </div>
+
+  <script src="warning.js"></script>
+</body>
+</html>

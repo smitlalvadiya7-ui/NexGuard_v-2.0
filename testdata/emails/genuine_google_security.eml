@@ -1,0 +1,17 @@
+From: Google <no-reply@accounts.google.com>
+To: customer@example.com
+Subject: Security alert: new sign-in on Windows
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=accounts.google.com; dkim=pass header.d=google.com; dmarc=pass header.from=google.com
+Date: Wed, 15 Jul 2026 12:30:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+A new sign-in on Windows
+
+We noticed a new sign-in to your Google Account on a Windows device.
+If this was you, you don't need to do anything. If not, we'll help you
+secure your account.
+
+You received this email to let you know about important changes to your
+Google Account and services.
+
+(c) 2026 Google LLC

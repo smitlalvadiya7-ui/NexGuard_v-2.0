@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-07-17",
+    "phish_sources": [
+      "openphish(300)",
+      "phishtank-file(64796)"
+    ],
+    "legit_source": "tranco[ranks 1001-50000]",
+    "added": 9997,
+    "total_rows": 21427
+  }
+]

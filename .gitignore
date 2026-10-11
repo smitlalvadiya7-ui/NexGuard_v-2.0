@@ -1,0 +1,71 @@
+# ================= SECRETS: NEVER COMMIT =================
+.env
+.env.*
+!.env.example
+*.env.bak
+credentials.json
+token.json
+*.key
+*.pem
+*.crx
+
+# ================= Databases / runtime data =================
+*.db
+*.sqlite
+*.sqlite3
+scan_history.json
+samples/
+*.log
+backend/metrics_run_log.jsonl
+backend/data/feed_cache/
+backend/data/corpus/
+backend/eval/_image_corpus/
+backend/logs/
+
+# ================= Dependencies / build output =================
+.venv/
+venv/
+env/
+node_modules/
+frontend/dist/
+extension/dist/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ================= ML: trained model only (no training dataset) =================
+backend/ml/raw_dataset.csv
+backend/ml/*.candidate.joblib
+backend/ml/metrics.candidate.json
+backend/ml/phishing_model.char_candidate.joblib
+backend/ml/*.prev.joblib
+backend/ml/metrics.prev.json
+backend/ml/retrain_log.json
+backend/ml/retrain_task.log
+backend/ml/*.bak
+
+# ================= Personal / internal notes =================
+_unused/
+.claude/
+.vscode/
+Technical task.txt
+NEXGUARD_COMPLETE_GUIDE.md
+GITHUB_UPLOAD_PLAN.md
+README_ADVANCED_RUN.txt
+VERSION.md
+backend/ml/README.md
+extension/README.md
+extension/PRIVACY.md
+testdata/README.md
+scripts/daily_benchmark.cmd
+scripts/daily_corpus.cmd
+scripts/schedule_daily_jobs.ps1
+
+# docs: only the workflow image is published
+docs/*
+!docs/workflow.png
+
+# ================= OS =================
+.DS_Store
+Thumbs.db

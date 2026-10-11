@@ -1,0 +1,18 @@
+# NexGuard test URLs — one per line, with the expected verdict.
+# The phishing entries are Google's OFFICIAL Safe-Browsing test pages:
+# always online, harmless, and flagged by design. For fresh real phishing,
+# pull today's feed: https://openphish.com/feed.txt
+
+# --- expected: SAFE -----------------------------------------------------
+https://www.google.com
+https://github.com
+https://www.wikipedia.org
+https://www.microsoft.com
+https://www.python.org
+https://bbc.com
+https://shopify.com
+
+# --- expected: SUSPICIOUS or MALICIOUS ----------------------------------
+http://testsafebrowsing.appspot.com/s/phishing.html
+http://testsafebrowsing.appspot.com/s/malware.html
+http://testsafebrowsing.appspot.com/s/unwanted.html

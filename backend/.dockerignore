@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Never bake secrets or the local database into the image
+.env
+nexguard.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+uvicorn_out.log
+uvicorn_err.log
+
+# Gmail OAuth secrets: supply them on the server, never bake into the image
+credentials.json
+token.json

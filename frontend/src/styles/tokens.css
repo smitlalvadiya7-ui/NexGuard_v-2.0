@@ -1,0 +1,58 @@
+/*
+ * NexGuard AI — design tokens
+ *
+ * Clean, professional SaaS-security look (calm, precise, trustworthy) —
+ * not the old neon-cyber theme. One restrained indigo/blue accent; neutral
+ * near-white/near-black surfaces (never pure #000/#fff); a green/amber/red
+ * verdict triad re-tuned per theme so each stays >= 4.5:1 (WCAG AA text)
+ * against both --bg and --panel in that theme.
+ *
+ * Surface roles (both themes): --panel-2 is the "secondary" surface used
+ * for hover states, table stripes, and recessed/nested areas — shifted
+ * toward mid-gray from --panel so it reads as a distinct plane without
+ * competing with --bg.
+ */
+
+:root {
+  --bg: #f7f8fa;
+  --panel: #fefeff;
+  --panel-2: #eef1f4;
+  --text: #14161c;
+  --muted: #5b6472;
+  --border: #e1e4ea;
+  --accent: #3552d6;
+  --safe: #157f3c;
+  --warn: #a15c00;
+  --danger: #c22a2a;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0d12;
+  --panel: #12151c;
+  --panel-2: #1a1e27;
+  --text: #e7e9ee;
+  --muted: #8b93a2;
+  --border: #262b36;
+  --accent: #7c8ff2;
+  --safe: #34c27f;
+  --warn: #e0a130;
+  --danger: #e5534b;
+}
+
+/* Tailwind v4: expose each CSS variable as a Tailwind color so utilities
+   like bg-bg, bg-panel, text-muted, border-border, text-safe/warn/danger
+   and bg-accent compile. `inline` keeps these resolving against the live
+   custom property (not a value baked in at build time), which is what
+   lets the light/dark override above take effect at runtime. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-safe: var(--safe);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+}

@@ -1,0 +1,19 @@
+From: ICICI Bank <alerts@icicibank.com>
+To: customer@example.com
+Subject: Your account statement for June 2026
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=icicibank.com; dkim=pass header.d=icicibank.com; dmarc=pass header.from=icicibank.com
+Date: Wed, 15 Jul 2026 10:00:00 +0530
+Content-Type: text/plain; charset=utf-8
+
+Dear Customer,
+
+Your account statement for June 2026 is now available in internet banking.
+
+Safety reminder: ICICI Bank never asks for your OTP, CVV, PIN or password
+on calls, SMS or email. Never share these with anyone.
+
+To view your statement, log in to internet banking from our official app
+or website.
+
+Warm regards,
+ICICI Bank

@@ -1,0 +1,34 @@
+{
+  "run_at": "2026-07-18T11:30:36.515207+00:00",
+  "challenger": "char_tfidf_logreg (char_wb 2-5grams, max_features=200000)",
+  "n_samples": 21427,
+  "deployed_scores": {
+    "accuracy": 0.9503,
+    "precision": 0.9552,
+    "recall": 0.9449,
+    "f1": 0.95,
+    "roc_auc": 0.9882
+  },
+  "challenger_scores": {
+    "accuracy": 0.9561,
+    "precision": 0.9734,
+    "recall": 0.9379,
+    "f1": 0.9553,
+    "roc_auc": 0.9891
+  },
+  "challenger_wins": true,
+  "reason": "challenger wins: ROC-AUC 0.9882 -> 0.9891, F1 0.9500 -> 0.9553",
+  "real_pipeline_ab": {
+    "run_at": "2026-07-18",
+    "corpus": "eval/_corpus_m4.json — frozen, 176 legit (Tranco 2000-10000 eval-half + security pages + baseline FPs) + 156 phish (OpenPhish, training URLs excluded)",
+    "method": "serial eval/ab_eval scan runs: deployed XGBoost, then NEXGUARD_MODEL_PATH=char candidate; same corpus, full real pipeline",
+    "deployed": {"precision": 0.9507, "recall": 0.9712, "fp": 7, "fn": 4},
+    "challenger": {"precision": 0.9928, "recall": 0.9718, "fp": 1, "fn": 4},
+    "legit_fixed": 6,
+    "legit_regressed": 0,
+    "phish_newly_caught": 0,
+    "phish_newly_missed": 0,
+    "notable_fps_fixed": ["krebsonsecurity.com", "www.schneier.com", "ria.ru", "24.hu", "megatv.com", "boylove.cc"],
+    "decision": "PROMOTED 2026-07-19 via py -m ml.train_char_model --promote (previous model kept as phishing_model.prev.joblib)"
+  }
+}

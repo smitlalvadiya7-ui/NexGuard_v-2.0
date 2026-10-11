@@ -1,0 +1,20 @@
+{
+  "name": "nexguard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NexGuard AI — phishing and scam detection. npm scripts here are thin wrappers over run.cmd / run.sh so one command works the same on Windows and Linux.",
+  "scripts": {
+    "start": "node scripts/npm-run.js start",
+    "prod": "node scripts/npm-run.js prod",
+    "health": "node scripts/npm-run.js health",
+    "check": "node scripts/npm-run.js check",
+    "setup": "node scripts/npm-run.js setup",
+    "test": "node scripts/npm-run.js test",
+    "test:frontend": "npm --prefix frontend run test",
+    "build:frontend": "npm --prefix frontend run build",
+    "dev:frontend": "npm --prefix frontend run dev"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

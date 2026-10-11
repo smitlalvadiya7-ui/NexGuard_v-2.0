@@ -1,0 +1,20 @@
+From: India Post Delivery <notification@indiapost-track-parcel.xyz>
+To: customer@example.com
+Subject: URGENT: Your parcel is held at customs - pay duty now
+Authentication-Results: mx.example.com; spf=fail; dkim=none; dmarc=none
+Date: Sat, 18 Jul 2026 14:30:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+Dear Customer,
+
+Your parcel INP4432871 could not be delivered because the customs import
+duty of Rs 250 is unpaid. The package will be RETURNED to the sender
+within 24 hours.
+
+Pay the duty immediately to release your parcel:
+http://indiapost-track-parcel.xyz/pay-duty?id=INP4432871
+
+Enter your card number and OTP on the payment page to complete the
+release process.
+
+India Post Delivery Team

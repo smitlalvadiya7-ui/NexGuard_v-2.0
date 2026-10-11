@@ -1,0 +1,242 @@
+{
+  "run_at": "2026-10-01T20:56:33.485887+00:00",
+  "training_rows_with_login_words": {
+    "legitimate": 33,
+    "phishing": 904
+  },
+  "candidate": "deployed recipe + 3000 login-path negatives on train-half Tranco domains, class_weight=balanced",
+  "ml_only": {
+    "deployed": {
+      "heldout": {
+        "roc_auc": 0.9891,
+        "f1": 0.9553,
+        "precision": 0.9734,
+        "recall": 0.9379
+      },
+      "login_urls_on_unseen_legit_domains_flagged": 0.582,
+      "real_signin_pages_flagged": 0.75,
+      "m4-legit_flagged": 0.0057,
+      "m4-phish_flagged": 0.8974,
+      "pack-SAFE_flagged": 0.0462,
+      "pack-PHISHY-LEXICAL_flagged": 0.9833,
+      "pack-TEST-PAGE_flagged": 0.5
+    },
+    "candidate": {
+      "heldout": {
+        "roc_auc": 0.9883,
+        "f1": 0.9567,
+        "precision": 0.9707,
+        "recall": 0.9431
+      },
+      "login_urls_on_unseen_legit_domains_flagged": 0.0,
+      "real_signin_pages_flagged": 0.25,
+      "m4-legit_flagged": 0.0,
+      "m4-phish_flagged": 0.8974,
+      "pack-SAFE_flagged": 0.0154,
+      "pack-PHISHY-LEXICAL_flagged": 0.95,
+      "pack-TEST-PAGE_flagged": 0.5
+    }
+  },
+  "full_pipeline_network_stubbed": {
+    "deployed": {
+      "m4-legit": {
+        "n": 176,
+        "flagged": 0,
+        "flagged_urls": []
+      },
+      "m4-phish": {
+        "n": 156,
+        "flagged": 93,
+        "flagged_urls": [
+          "https://steemcommunty.com/tradeoffer/4367896439649",
+          "https://www.ofertaslatam.vercel.app/",
+          "https://qr.link/15nabR",
+          "https://www.endeveteasetsxmimgqiye.vercel.app/",
+          "https://justmod64.github.io/HelloWorldLogin/",
+          "https://www.ig-clone-gamma.vercel.app/",
+          "https://updateadsinfocode4443.blogspot.com/?m=1",
+          "https://www.awscfdns.com/gp/new-releases/?ref_=nav_cs_newreleases/",
+          "http://www.mantener1wht1.webcindario.com/",
+          "https://sahjakshaksscc.eu.cc/es",
+          "http://webverifitl.webcindario.com/",
+          "http://tsmhvsdwsc.eu.cc/es",
+          "https://www.onboarding-bpce-recette-sf5.itroom.fr/",
+          "https://danapaycicil.github.io/danapaylater",
+          "https://97ee9.catex.at/cnbcard/zpnx1bers.php",
+          "https://ferreteria-itauhin-dd46ca.netlify.app/",
+          "https://toki-gov-tr-18.vercel.app/",
+          "https://beneficiosfullbele.com/",
+          "https://lo-kucoin-doc.pages.dev/",
+          "https://iphone.map-location.ru.com/help?kAK",
+          "http://fortinv.mom/",
+          "https://s.team-p.my/p/hdwp-xhbm/ksyqaxmd",
+          "https://82hg49.com/",
+          "https://dadvil007.github.io/Inftafrrrdjfkfk",
+          "https://68-210-102-85.cprapid.com/de/update.php?pj5atlnmjgtjzqsdmf7p",
+          "https://sanjeetprasadverma.github.io/facebookClone",
+          "https://00award.github.io/invitationik.github.io",
+          "https://ww.viette2026.fwh.is/support-for-business",
+          "https://tinytikesbb.github.io/Rogers/",
+          "http://he7567.craftum.io/",
+          "https://abzsttana.wpenginepowered.com/ppa/",
+          "https://lihi2.me/Dv6EL",
+          "https://prome-six.vercel.app/",
+          "https://freeflow.tarifacliente.site/",
+          "https://produ-banco.vercel.app/",
+          "https://aumenttojax01.s3.us-east-005.backblazeb2.com/aumento.html",
+          "https://demo2.cloudwp.dev/trial-6y921632/wp-admin/user/in/auth/track.php",
+          "https://00award.github.io/invitationik.github.io/",
+          "https://gopalx235.github.io/Amazon_clone/cart.html",
+          "https://gopalx235.github.io/Amazon_clone/orders.html",
+          "https://www.coderhub-one.vercel.app/",
+          "https://account-membership.vercel.app/",
+          "https://zedelivery-online.vercel.app/",
+          "https://urlto.me/27E28",
+          "https://ipfs.io/ipfs/bafybeifqmw27yoxmdia4hammygq32ptpcplan7stfno6t4mxtxgeulwupy?filename=Ondedriveany.html",
+          "https://crazy12347.github.io/protfolio",
+          "https://eager-oak-964.injaltransferwillgonabaid.workers.dev/",
+          "https://us1-files-document-storage-files-s9046-k590577.storage-id-406936.workers.dev/",
+          "https://mohamedtahoun1.github.io/my-test-app/",
+          "https://indodslayannzdana.sounce.biz.id/",
+          "https://571abd92e8.staticcontenthost.com/?rid=571abd92e8",
+          "https://sedeagenciatributaria-in.eu.cc/es",
+          "https://fq.relink-tech.cn/",
+          "https://php-web-server--enlinea0212.replit.app/",
+          "https://truthpreye-afk.github.io/Paypal/",
+          "https://chatador8.sbs/offer/",
+          "https://miliogio.sbs/offer/",
+          "https://voluitar.sbs/offer/",
+          "https://photo-collection-intifa-islam-mahi.blogspot.com/",
+          "https://css-ch.blogspot.com/",
+          "https://concessioninvert.wasmer.app/",
+          "https://chestermainres.wasmer.app/",
+          "https://verificarms365.pages.dev/"
+        ]
+      },
+      "pack-SAFE": {
+        "n": 130,
+        "flagged": 0,
+        "flagged_urls": []
+      },
+      "pack-PHISHY-LEXICAL": {
+        "n": 60,
+        "flagged": 60,
+        "flagged_urls": []
+      },
+      "pack-TEST-PAGE": {
+        "n": 10,
+        "flagged": 4,
+        "flagged_urls": [
+          "https://testsafebrowsing.appspot.com/s/phishing.html",
+          "https://www.amtso.org/check-desktop-phishing-page/",
+          "https://www.amtso.org/check-desktop-malware-page/",
+          "https://www.amtso.org/check-desktop-potentially-unwanted-application/",
+          "http://malware.wicar.org/data/eicar.com",
+          "https://wicar.org/data/eicar.com"
+        ]
+      }
+    },
+    "candidate": {
+      "m4-legit": {
+        "n": 176,
+        "flagged": 0,
+        "flagged_urls": []
+      },
+      "m4-phish": {
+        "n": 156,
+        "flagged": 93,
+        "flagged_urls": [
+          "https://steemcommunty.com/tradeoffer/4367896439649",
+          "https://www.ofertaslatam.vercel.app/",
+          "https://qr.link/15nabR",
+          "https://www.endeveteasetsxmimgqiye.vercel.app/",
+          "https://justmod64.github.io/HelloWorldLogin/",
+          "https://www.ig-clone-gamma.vercel.app/",
+          "https://updateadsinfocode4443.blogspot.com/?m=1",
+          "https://www.awscfdns.com/gp/new-releases/?ref_=nav_cs_newreleases/",
+          "http://www.mantener1wht1.webcindario.com/",
+          "https://sahjakshaksscc.eu.cc/es",
+          "http://webverifitl.webcindario.com/",
+          "http://tsmhvsdwsc.eu.cc/es",
+          "https://www.onboarding-bpce-recette-sf5.itroom.fr/",
+          "https://danapaycicil.github.io/danapaylater",
+          "https://97ee9.catex.at/cnbcard/zpnx1bers.php",
+          "https://ferreteria-itauhin-dd46ca.netlify.app/",
+          "https://toki-gov-tr-18.vercel.app/",
+          "https://beneficiosfullbele.com/",
+          "https://lo-kucoin-doc.pages.dev/",
+          "https://iphone.map-location.ru.com/help?kAK",
+          "http://fortinv.mom/",
+          "https://s.team-p.my/p/hdwp-xhbm/ksyqaxmd",
+          "https://82hg49.com/",
+          "https://dadvil007.github.io/Inftafrrrdjfkfk",
+          "https://68-210-102-85.cprapid.com/de/update.php?pj5atlnmjgtjzqsdmf7p",
+          "https://sanjeetprasadverma.github.io/facebookClone",
+          "https://00award.github.io/invitationik.github.io",
+          "https://ww.viette2026.fwh.is/support-for-business",
+          "https://tinytikesbb.github.io/Rogers/",
+          "http://he7567.craftum.io/",
+          "https://abzsttana.wpenginepowered.com/ppa/",
+          "https://lihi2.me/Dv6EL",
+          "https://prome-six.vercel.app/",
+          "https://freeflow.tarifacliente.site/",
+          "https://produ-banco.vercel.app/",
+          "https://aumenttojax01.s3.us-east-005.backblazeb2.com/aumento.html",
+          "https://demo2.cloudwp.dev/trial-6y921632/wp-admin/user/in/auth/track.php",
+          "https://00award.github.io/invitationik.github.io/",
+          "https://gopalx235.github.io/Amazon_clone/cart.html",
+          "https://gopalx235.github.io/Amazon_clone/orders.html",
+          "https://www.coderhub-one.vercel.app/",
+          "https://account-membership.vercel.app/",
+          "https://zedelivery-online.vercel.app/",
+          "https://urlto.me/27E28",
+          "https://ipfs.io/ipfs/bafybeifqmw27yoxmdia4hammygq32ptpcplan7stfno6t4mxtxgeulwupy?filename=Ondedriveany.html",
+          "https://crazy12347.github.io/protfolio",
+          "https://eager-oak-964.injaltransferwillgonabaid.workers.dev/",
+          "https://us1-files-document-storage-files-s9046-k590577.storage-id-406936.workers.dev/",
+          "https://mohamedtahoun1.github.io/my-test-app/",
+          "https://indodslayannzdana.sounce.biz.id/",
+          "https://571abd92e8.staticcontenthost.com/?rid=571abd92e8",
+          "https://sedeagenciatributaria-in.eu.cc/es",
+          "https://fq.relink-tech.cn/",
+          "https://php-web-server--enlinea0212.replit.app/",
+          "https://truthpreye-afk.github.io/Paypal/",
+          "https://chatador8.sbs/offer/",
+          "https://miliogio.sbs/offer/",
+          "https://voluitar.sbs/offer/",
+          "https://photo-collection-intifa-islam-mahi.blogspot.com/",
+          "https://css-ch.blogspot.com/",
+          "https://concessioninvert.wasmer.app/",
+          "https://chestermainres.wasmer.app/",
+          "https://verificarms365.pages.dev/"
+        ]
+      },
+      "pack-SAFE": {
+        "n": 130,
+        "flagged": 0,
+        "flagged_urls": []
+      },
+      "pack-PHISHY-LEXICAL": {
+        "n": 60,
+        "flagged": 58,
+        "flagged_urls": [
+          "http://sbi-rewards-redeem-points.online/login",
+          "http://xn--pypal-4ve.com/signin"
+        ]
+      },
+      "pack-TEST-PAGE": {
+        "n": 10,
+        "flagged": 4,
+        "flagged_urls": [
+          "https://testsafebrowsing.appspot.com/s/phishing.html",
+          "https://www.amtso.org/check-desktop-phishing-page/",
+          "https://www.amtso.org/check-desktop-malware-page/",
+          "https://www.amtso.org/check-desktop-potentially-unwanted-application/",
+          "http://malware.wicar.org/data/eicar.com",
+          "https://wicar.org/data/eicar.com"
+        ]
+      }
+    }
+  },
+  "decision": "KEEP DEPLOYED \u2014 the candidate is worse at the verdict level on: pack-PHISHY-LEXICAL"
+}

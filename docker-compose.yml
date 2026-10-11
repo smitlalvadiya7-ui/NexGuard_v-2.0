@@ -1,0 +1,53 @@
+services:
+
+  # ── NexGuard AI backend (FastAPI + uvicorn) ──────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"          # browser JS calls http://127.0.0.1:8000 directly
+    env_file:
+      - path: ./backend/.env
+        required: false      # skip gracefully if .env is absent; set vars inline below
+    environment:
+      # Override or set API keys here for quick local testing.
+      # For production, use your platform's secret manager instead.
+      NEXGUARD_ALLOWED_ORIGINS: "http://localhost:5500,http://127.0.0.1:5500"
+      # Scale knobs — empty by default, so the stock `docker compose up` keeps
+      # the local flow (SQLite + in-memory cache). Set these (or layer in
+      # docker-compose.scale.yml) to switch to Postgres + Redis with no code change.
+      DATABASE_URL: "${DATABASE_URL:-}"
+      REDIS_URL: "${REDIS_URL:-}"
+      NEXGUARD_LOG_JSON: "${NEXGUARD_LOG_JSON:-}"
+      # VIRUSTOTAL_API_KEY: ""
+      # GOOGLE_SAFEBROWSING_API_KEY: ""
+      # URLHAUS_AUTH_KEY: ""
+    volumes:
+      - nexguard_db:/app     # persists nexguard.db across container restarts
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # ── Static frontend (nginx serving the built React SPA) ──────────────────
+  # Build it first on the host: cd frontend && npm ci && npm run build
+  # (Or skip this service entirely — the backend serves frontend/dist itself
+  # at http://localhost:8000/ whenever the build exists.)
+  frontend:
+    image: nginx:1.27-alpine
+    ports:
+      - "5500:80"            # open http://localhost:5500 in your browser
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  nexguard_db:               # named volume — survives `docker compose down`
+                             # use `docker compose down -v` to wipe it

@@ -1,0 +1,2389 @@
+{
+  "generated": "2026-09-08T13:10:13",
+  "phish": [
+    {
+      "domain": "backblazeb2.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "82hg49.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "17655.xyz",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "79477.xyz",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "b29j.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "awscfdns.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "authorised-support.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "80448.xyz",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "baterijoskompiuteriams.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "beneficiosfullbele.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "crsor.info",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "chatador8.sbs",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "cercel.app",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "comicheaseis.click",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "craftum.io",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "edgeone.dev",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "catex.at",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "empresas-hsbc.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "eu.cc",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "cloudwp.dev",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "f28g.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "f28i.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "flipkart-office.pro",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "fortinv.mom",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "fwh.is",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "gob-ar.cc",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "h19y.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "g13b.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "iconce.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "hostel.town",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "itroom.fr",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ipfs.io",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "kfc.sh",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "lihi2.me",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "m28u.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "meulocker.skin",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "miliogio.sbs",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "p26x.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "mostbet24618.help",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "metatask.vip",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "qr.link",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "p26y.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "relink-tech.cn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "plan-whatapp.hk.cn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "robiox.com.gr",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "roblox.com.am",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "roblox.com.bn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "roblox.com.bi",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "roblox.com.ml",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "roblox.com.et",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "roblox.com.pt",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "s23l.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "s23m.top",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "staticcontenthost.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "tarifacliente.site",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "steemcommunty.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "urlto.me",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "voluitar.sbs",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "team-p.my",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "whatapp.hk.cn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "weeblysite.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "whatapps.hk.cn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "webcindario.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 3
+    },
+    {
+      "domain": "sounce.biz.id",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 3
+    }
+  ],
+  "legit": [
+    {
+      "domain": "24.hu",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "airbus.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "apple-dns.net",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "79king1.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "alchemer.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "a-ads.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "appboycdn.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "3m.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "adtng.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "anl.gov",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-17.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "bakecaincontrii.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-29.co.uk",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-22.net",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-39.co.uk",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "ay.delivery",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-16.net",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-51.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "awsdns-48.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "bamper.by",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "barracudanetworks.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "beforward.jp",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "basecamp.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "bing.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "boylove.cc",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "bdtelemetry.amazon",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "bongacams.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "buzzsprout.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "browser-intake-us5-datadoghq.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "betcity.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "cargocollective.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "cbsivideo.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "cisa.gov",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "cbp.gov",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "cbslocal.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "churchofjesuschrist.org",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "cdek.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "climatempo.com.br",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "chron.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "cas.cn",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "cloudflarestorage.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "csic.es",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "csis.org",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dana.id",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dbankcloud.eu",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "dittoparty.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "demonware.net",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dns.br",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dns.kr",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "doctoreto.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "doubleclick.net",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dtscout.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dynadot.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "fitbit.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "g2.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "dzen.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "google.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "eff.org",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "google.com.co",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "google.jo",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "googleapis.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "googletagmanager.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "googleusercontent.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "googlevideo.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "goooooooooooooooooooooooooooooooooooooooooooooooooooooooooogle.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "haveibeenpwned.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "hdfilmcehennemi.nl",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "hubspotusercontent-na1.net",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "icrc.org",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "huanqiu.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ifconfig.co",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "interno.gov.it",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "inmotionhosting.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "kaspersky.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ketchcdn.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "juegosonce.es",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "jornada.com.mx",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "kisskh.nl",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "krebsonsecurity.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "kustomerapp.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "l-cdn.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "livedns.co.uk",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "libramemoria.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "lottomatica.it",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "logi.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "mainichi.jp",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "malwarebytes.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "marketscreener.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "matomo.org",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "line-scdn.net",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "mediagotechnology.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "medicalxpress.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "megatv.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "mendeley.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "microsoftonline.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "morganstanley.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "mgts.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "mozilla.org",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ncsc.gov.uk",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "nest.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "news.cn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "nextdns.io",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "nic.cz",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "niconsul.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "novel543.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "npmjs.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "officeally.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "owasp.org",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "openlibrary.org",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "nifty.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "packetsdk.io",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "pbxai.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "paheal.net",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "phishtank.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "photoroom.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "pinterest.net",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "phosagro.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "piwik.pro",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "plex.bz",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "podbean.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "pornzog.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "powerreviews.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "preply.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "privacyshield.gov",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "queniuak.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "realtimetrains.co.uk",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "registry.in",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "reliefweb.int",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ria.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ripe.net",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "roeyecdn.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "rollingstone.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "rtb-oveeo.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "rosneft.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "sans.org",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "scitechdaily.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "screenrant.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "schwab.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "schneier.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "seagate.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "seattletimes.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "skype.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "spov-dc-msedge.net",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "sii.cl",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "successfactors.eu",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "soha.vn",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "tele2.ru",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "tmobile-digital.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "toutiao.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "telmexla.net.co",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "tobsnssdk.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "trasre.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "trezor.io",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "tudogostoso.com.br",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "tripadvisor.it",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "tuyaus.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ub.edu",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "uba.ar",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "useinsider.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "vanguardngr.com",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "vasdgame.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "virustotal.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "wikicv.net",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "unitedcinemas.jp",
+      "dmarc_present": true,
+      "dmarc_policy": "none",
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "usaid.gov",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "virginia.edu",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "wikiloc.com",
+      "dmarc_present": true,
+      "dmarc_policy": "quarantine",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "wirtgen-group.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "x-fetish.tube",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "ymcdn.org",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "youversionapi.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "zapier.com",
+      "dmarc_present": true,
+      "dmarc_policy": "reject",
+      "dmarc_enforcing": true,
+      "spf_present": true,
+      "spf_strict": true,
+      "mx_present": true,
+      "errors": 0
+    },
+    {
+      "domain": "zillowstatic.com",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": false,
+      "spf_strict": false,
+      "mx_present": false,
+      "errors": 0
+    },
+    {
+      "domain": "zol.com.cn",
+      "dmarc_present": false,
+      "dmarc_policy": null,
+      "dmarc_enforcing": false,
+      "spf_present": true,
+      "spf_strict": false,
+      "mx_present": true,
+      "errors": 0
+    }
+  ],
+  "phish_tenants_excluded": 14,
+  "legit_tenants_excluded": 0
+}

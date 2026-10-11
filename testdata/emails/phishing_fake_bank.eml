@@ -1,0 +1,18 @@
+From: ICICI Bank <security@icici-verify.top>
+To: customer@example.com
+Subject: URGENT: Your account has been suspended - verify now
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=icici-verify.top; dkim=none; dmarc=fail header.from=icici-verify.top
+Date: Wed, 15 Jul 2026 03:14:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+Dear Customer,
+
+Your ICICI Bank account has been SUSPENDED due to suspicious activity.
+To avoid permanent closure, you must verify your account within 24 hours.
+
+Reply immediately with your OTP, card number and CVV to reactivate your
+account. Failure to respond will result in permanent suspension.
+
+Verify now: http://icici-verify.top/reactivate
+
+ICICI Security Team

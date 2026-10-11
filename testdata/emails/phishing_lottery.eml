@@ -1,0 +1,19 @@
+From: KBC Lottery Team <winner@kbc-lucky-draw.info>
+To: customer@example.com
+Subject: Congratulations! You have won 25 Lakh in the KBC lucky draw
+Authentication-Results: mx.example.com; spf=none; dkim=none; dmarc=none
+Date: Wed, 15 Jul 2026 06:45:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+Congratulations!!!
+
+Your mobile number has won the KBC lucky draw prize money of 25 Lakh
+rupees. To claim your prize, you must pay a small refundable processing
+fee of 5000 rupees.
+
+Send the processing fee via gift card or bank transfer and reply with
+your bank account number to receive your winnings immediately.
+
+Act now - this offer expires today!
+
+KBC Lottery Team

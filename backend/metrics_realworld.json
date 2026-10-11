@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-10-02T09:41:06.753831+00:00",
+  "evaluated_on_date": "2026-10-02",
+  "dataset_sources": {
+    "legit": "tranco[ranks 2000-10000] sample=599 seed=42 eval-half, top-1000 exemption excluded",
+    "phish": "openphish eval-half, 138 train-half/already-trained URLs excluded"
+  },
+  "wall_time_s": 383.4,
+  "threat_positive_class": "verdict in {SUSPICIOUS, MALICIOUS}",
+  "feed_assist": false,
+  "intel_stack": "full",
+  "scan_path_feeds": "scan-path community blocklist DISABLED \u2014 recall measures the detection engine, not feed membership",
+  "precision": 0.9538,
+  "recall": 0.5962,
+  "f1": 0.7337,
+  "false_positive_rate": 0.0049,
+  "false_negative_rate": 0.4038,
+  "true_positive_rate": 0.5962,
+  "median_scan_time_ms": 5238,
+  "p95_scan_time_ms": 10243,
+  "confusion_matrix": {
+    "tp": 62,
+    "fp": 3,
+    "tn": 612,
+    "fn": 42
+  },
+  "counts": {
+    "legit_total": 615,
+    "legit_scored": 615,
+    "legit_errors": 0,
+    "phish_total": 162,
+    "phish_scored": 104,
+    "phish_dead_excluded": 58,
+    "phish_errors": 0
+  },
+  "examples": {
+    "false_positives": [
+      "https://itu.int",
+      "https://truyenfull.live",
+      "https://firwinds.site"
+    ],
+    "false_negatives": [
+      "https://cherryshinde99-hash.github.io/My-first-website-/",
+      "https://fatimamajeeddd.github.io/amazone-clone/",
+      "https://amanadap.pages.dev/",
+      "https://www.olmo-martin.net/wp-content/plugins/vxodlrmtiz/upload",
+      "https://abrir.link/NlNJr",
+      "https://www.activar-cuenta-bhd-inicio.unaux.com/",
+      "https://clubdenut.club/abababa/WrROJIk5u75m",
+      "https://fseryy.pages.dev/books-used-books-textbooks/b/?ie=UTF8&node=283155&ref_=nav_cs_books",
+      "http://activar-cuenta-bhd-inicio.unaux.com/",
+      "https://fseryy.pages.dev/gp/bestsellers/automotive/3147717011/ref=zg_b_bs_3147717011_1/ref=pd_rhf_dp_s_pd_crcbs_d_sccl_1_5_bsb/136-1610088-3605352?pd_rd_w=VWX7C&content-id=amzn1.sym.31346ea4-6dbc-4ac4-b4f3-cbf5f8cab4b9&pf_rd_p=31346ea4-6dbc-4ac4-b4f3-cbf5f8cab4b9&pf_rd_r=5QY5RTXX190K4QVVYH5J&pd_rd_wg=QdREy&pd_rd_r=68aceaf6-38a3-4158-9b76-d8decb97dbc4&pd_rd_i=B01KIFISX2",
+      "https://fseryy.pages.dev/Best-Sellers-Gift-Cards-Wedding-Engagement/zgbs/gift-cards/120225717011/ref=zg_bs_nav_gift-cards_1_120225704011",
+      "https://fseryy.pages.dev/gp/bestsellers/automotive/155346011/ref=zg_b_bs_155346011_1/ref=pd_rhf_dp_s_pd_crcbs_d_sccl_1_4_bsb/136-1610088-3605352?pd_rd_w=VWX7C&content-id=amzn1.sym.31346ea4-6dbc-4ac4-b4f3-cbf5f8cab4b9&pf_rd_p=31346ea4-6dbc-4ac4-b4f3-cbf5f8cab4b9&pf_rd_r=5QY5RTXX190K4QVVYH5J&pd_rd_wg=QdREy&pd_rd_r=68aceaf6-38a3-4158-9b76-d8decb97dbc4&pd_rd_i=B0CS3B7MD8",
+      "https://credito-pichincha-12--prestamoubiii.replit.app/",
+      "https://ramtinwork25-spec.github.io/myinstahack",
+      "https://auth.properties/E.tqDgZ2EGPKE?/microsoftonline/mailbox/upgrade&userid=75468973984785978212312307887543"
+    ]
+  }
+}

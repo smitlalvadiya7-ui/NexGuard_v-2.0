@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Scale overlay for NexGuard — adds Postgres + Redis and points the backend at
+# them. The base docker-compose.yml is unchanged and still runs standalone with
+# SQLite + in-memory cache (the local flow). Layer this file on top to run the
+# scaled stack with ONE command:
+#
+#     docker compose -f docker-compose.yml -f docker-compose.scale.yml up --build
+#
+# Tear down (keep data):   docker compose -f docker-compose.yml -f docker-compose.scale.yml down
+# Tear down (wipe data):   …same… down -v
+# ─────────────────────────────────────────────────────────────────────────────
+services:
+
+  backend:
+    environment:
+      # Switch storage + cache to the managed services below. SQLAlchemy and the
+      # cache/rate-limit layers read these at startup; no code change required.
+      DATABASE_URL: "postgresql+psycopg://nexguard:nexguard@db:5432/nexguard"
+      REDIS_URL: "redis://cache:6379/0"
+      NEXGUARD_LOG_JSON: "1"          # structured JSON logs for log shipping
+    # Don't bind-mount the SQLite volume onto /app when using Postgres.
+    volumes: []
+    depends_on:
+      db:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+
+  # ── Postgres ──────────────────────────────────────────────────────────────
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: nexguard
+      POSTGRES_PASSWORD: nexguard
+      POSTGRES_DB: nexguard
+    volumes:
+      - nexguard_pg:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nexguard -d nexguard"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ── Redis (cache + distributed rate-limit) ─────────────────────────────────
+  cache:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+
+volumes:
+  nexguard_pg:                 # Postgres data — survives `down`, wiped by `down -v`

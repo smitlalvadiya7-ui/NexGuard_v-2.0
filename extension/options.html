@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>NexGuard AI — Settings</title>
+  <style>
+    body {
+      width: 460px;
+      background: #0F172A;
+      color: #E2E8F0;
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      margin: 0;
+    }
+    h1 { color: #00E5FF; font-size: 20px; margin: 0 0 4px; }
+    p.sub { color: #94A3B8; font-size: 13px; margin: 0 0 20px; }
+    h2 {
+      color: #64748B; font-size: 12px; text-transform: uppercase;
+      letter-spacing: 0.6px; margin: 22px 0 10px;
+    }
+    .section {
+      background: #111827; border: 1px solid #1E293B;
+      border-radius: 10px; padding: 14px;
+    }
+    label { display: block; font-size: 13px; color: #94A3B8; margin-bottom: 6px; }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      box-sizing: border-box;
+      background: #0F172A;
+      border: 1px solid #1E293B;
+      border-radius: 8px;
+      color: #E2E8F0;
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    input:focus { outline: 2px solid #06B6D4; }
+    .row { display: flex; gap: 8px; margin-top: 12px; }
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .save { background: #06B6D4; color: #fff; }
+    .reset { background: #1E293B; color: #94A3B8; }
+    .hint { font-size: 12px; color: #64748B; margin-top: 8px; }
+    #status { font-size: 13px; margin-top: 14px; min-height: 18px; }
+    .ok { color: #22C55E; }
+    .err { color: #EF4444; }
+    code { color: #7DD3FC; }
+
+    /* E6 — protection level + toggles */
+    .level { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; cursor: pointer; }
+    .level input { margin-top: 2px; accent-color: #06B6D4; }
+    .level b { color: #E2E8F0; font-size: 13px; }
+    .level span { display: block; color: #64748B; font-size: 12px; }
+    .toggle-row { display: flex; align-items: center; gap: 8px; padding: 8px 0 0; cursor: pointer; }
+    .toggle-row input { accent-color: #06B6D4; }
+    .toggle-row b { color: #E2E8F0; font-size: 13px; font-weight: normal; }
+
+    /* E6 — whitelist */
+    .wl-list { list-style: none; margin: 0 0 10px; padding: 0; font-size: 13px; }
+    .wl-list li {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 10px; padding: 5px 0; border-bottom: 1px solid #1E293B;
+    }
+    .wl-list li:last-child { border-bottom: none; }
+    .wl-host { word-break: break-all; color: #CBD5E1; }
+    .wl-remove {
+      background: transparent; border: 1px solid #1E293B; color: #64748B;
+      border-radius: 6px; padding: 3px 10px; font-size: 12px; font-weight: normal;
+    }
+    .wl-remove:hover { color: #EF4444; border-color: #EF4444; }
+    .wl-empty { color: #64748B; font-size: 12px; margin: 0 0 10px; }
+    .wl-add { display: flex; gap: 8px; }
+    .wl-add input { flex: 1; }
+
+    /* E6 — account */
+    .who { color: #94A3B8; font-size: 13px; }
+    .who b { color: #E2E8F0; }
+    .tier-badge {
+      display: inline-block; padding: 1px 8px; border-radius: 999px;
+      background: #0F172A; border: 1px solid #06B6D4; color: #7DD3FC;
+      font-size: 11px; margin-left: 6px; text-transform: uppercase;
+    }
+    .signout-link { color: #64748B; font-size: 12px; text-decoration: none; float: right; }
+    .account input { margin-bottom: 8px; }
+    .auth-err { color: #EF4444; font-size: 12px; min-height: 14px; margin: 6px 0 0; }
+  </style>
+</head>
+<body>
+  <h1>NexGuard AI — Settings</h1>
+  <p class="sub">Protection level, trusted sites, backend and your account.</p>
+
+  <h2>Protection level</h2>
+  <div class="section">
+    <label class="level">
+      <input type="radio" name="level" value="block" id="levelBlock" />
+      <span><b>Block dangerous pages</b>
+        <span>Malicious and high-risk pages are stopped before they load. Recommended.</span></span>
+    </label>
+    <label class="level">
+      <input type="radio" name="level" value="warn" id="levelWarn" />
+      <span><b>Warn only</b>
+        <span>Never blocks — risky pages load with a warning bar on top.</span></span>
+    </label>
+    <label class="level">
+      <input type="radio" name="level" value="off" id="levelOff" />
+      <span><b>Off</b>
+        <span>No automatic scanning while you browse. Manual scans still work.</span></span>
+    </label>
+    <!-- M6 — the extension's own block cutoff, separate from the web app -->
+    <div class="threshold-row" id="thresholdRow">
+      <label for="blockAt"><b style="color:#E2E8F0;font-size:13px;">Block suspicious pages at risk score</b>
+        <span id="blockAtValue" style="color:#7DD3FC;font-weight:bold;"></span></label>
+      <input type="range" id="blockAt" min="40" max="90" step="5"
+             style="width:100%;accent-color:#06B6D4;margin:6px 0 2px;" />
+      <span style="display:flex;justify-content:space-between;color:#64748B;font-size:11px;">
+        <span>40 — stricter (blocks more)</span><span>90 — relaxed (warns instead)</span>
+      </span>
+    </div>
+    <label class="toggle-row">
+      <input type="checkbox" id="hoverScan" />
+      <b>Mark risky links on pages (scan links when you hover them)</b>
+    </label>
+    <label class="toggle-row">
+      <input type="checkbox" id="webmailBadges" />
+      <b>Mark brand senders in Gmail / Outlook (✓ genuine / ⚠ impersonation)</b>
+    </label>
+  </div>
+
+  <h2>Trusted sites (whitelist)</h2>
+  <div class="section">
+    <ul class="wl-list" id="wlList"></ul>
+    <p class="wl-empty" id="wlEmpty">No trusted sites yet. NexGuard never scans or blocks sites you add here.</p>
+    <div class="wl-add">
+      <input type="text" id="wlInput" placeholder="example.com" spellcheck="false" />
+      <button type="button" class="save" id="wlAddBtn">Add</button>
+    </div>
+    <p class="hint" id="wlHint"></p>
+  </div>
+
+  <h2>Account</h2>
+  <div class="section account">
+    <div id="signedIn" style="display:none;">
+      <a class="signout-link" id="signOutLink" href="#">Sign out</a>
+      <span class="who">Signed in as <b id="whoEmail"></b></span>
+      <span class="tier-badge" id="whoTier"></span>
+      <p class="hint">Scans from this extension count against your account (higher daily limit).</p>
+    </div>
+    <div id="signedOut" style="display:none;">
+      <input type="email" id="authEmail" placeholder="Email" autocomplete="username" />
+      <input type="password" id="authPassword" placeholder="Password" autocomplete="current-password" />
+      <button type="button" class="save" id="signInBtn" style="width:100%;">Sign in</button>
+      <p class="auth-err" id="authError"></p>
+    </div>
+  </div>
+
+  <h2>Backend</h2>
+  <div class="section">
+    <label for="backendUrl">Backend URL</label>
+    <input type="text" id="backendUrl" placeholder="http://127.0.0.1:8000" spellcheck="false" />
+    <p class="hint">
+      Default is your local backend <code>http://127.0.0.1:8000</code>. Change this only
+      if you run the NexGuard backend somewhere else. The backend must be running
+      for scanning to work.
+    </p>
+    <div class="row">
+      <button type="button" class="save" id="saveBtn">Save</button>
+      <button type="button" class="reset" id="resetBtn">Reset to default</button>
+    </div>
+  </div>
+
+  <p id="status"></p>
+
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+  <script src="settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

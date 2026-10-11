@@ -1,0 +1,201 @@
+url,bucket,expected,ml,why,needs
+https://www.google.com,SAFE,SAFE,0.0,reputation,none
+https://www.youtube.com,SAFE,SAFE,0.0,reputation,none
+https://www.microsoft.com,SAFE,SAFE,0.0,reputation,none
+https://www.apple.com,SAFE,SAFE,0.001,reputation,none
+https://www.amazon.com,SAFE,SAFE,0.001,reputation,none
+https://github.com,SAFE,SAFE,0.002,reputation,none
+https://gitlab.com,SAFE,SAFE,0.004,reputation,none
+https://stackoverflow.com,SAFE,SAFE,0.037,reputation,none
+https://www.cloudflare.com,SAFE,SAFE,0.005,reputation,none
+https://aws.amazon.com,SAFE,SAFE,0.023,reputation,none
+https://azure.microsoft.com,SAFE,SAFE,0.007,reputation,none
+https://cloud.google.com,SAFE,SAFE,0.028,reputation,none
+https://www.python.org,SAFE,SAFE,0.0,reputation,none
+https://www.djangoproject.com,SAFE,SAFE,0.002,reputation,none
+https://nodejs.org,SAFE,SAFE,0.004,reputation,none
+https://www.docker.com,SAFE,SAFE,0.0,reputation,none
+https://kubernetes.io,SAFE,SAFE,0.03,reputation,none
+https://www.mozilla.org,SAFE,SAFE,0.0,reputation,none
+https://developer.mozilla.org,SAFE,SAFE,0.02,reputation,none
+https://www.wikipedia.org,SAFE,SAFE,0.0,reputation,none
+https://www.facebook.com,SAFE,SAFE,0.001,reputation,none
+https://www.instagram.com,SAFE,SAFE,0.004,reputation,none
+https://www.linkedin.com,SAFE,SAFE,0.003,reputation,none
+https://x.com,SAFE,SAFE,0.0,reputation,none
+https://www.reddit.com,SAFE,SAFE,0.001,reputation,none
+https://www.whatsapp.com,SAFE,SAFE,0.105,reputation,none
+https://telegram.org,SAFE,SAFE,0.045,reputation,none
+https://www.pinterest.com,SAFE,SAFE,0.0,reputation,none
+https://discord.com,SAFE,SAFE,0.002,reputation,none
+https://www.tumblr.com,SAFE,SAFE,0.0,reputation,none
+https://www.paypal.com,SAFE,SAFE,0.026,reputation,none
+https://www.hsbc.co.uk,SAFE,SAFE,0.001,reputation,none
+https://www.barclays.co.uk,SAFE,SAFE,0.001,reputation,none
+https://www.lloydsbank.com,SAFE,SAFE,0.003,reputation,none
+https://www.natwest.com,SAFE,SAFE,0.0,reputation,none
+https://www.santander.co.uk,SAFE,SAFE,0.002,reputation,none
+https://www.icicibank.com,SAFE,SAFE,0.001,reputation,none
+https://www.hdfcbank.com,SAFE,SAFE,0.003,reputation,none
+https://www.sbi.co.in,SAFE,SAFE,0.001,reputation,none
+https://www.axisbank.com,SAFE,SAFE,0.003,reputation,none
+https://www.kotak.com,SAFE,SAFE,0.0,reputation,none
+https://www.chase.com,SAFE,SAFE,0.0,reputation,none
+https://www.bankofamerica.com,SAFE,SAFE,0.24,reputation,none
+https://www.wellsfargo.com,SAFE,SAFE,0.012,reputation,none
+https://www.citibank.com,SAFE,SAFE,0.001,reputation,none
+https://www.americanexpress.com,SAFE,SAFE,0.006,reputation,none
+https://www.visa.com,SAFE,SAFE,0.002,reputation,none
+https://www.mastercard.com,SAFE,SAFE,0.006,reputation,none
+https://www.revolut.com,SAFE,SAFE,0.002,reputation,none
+https://www.wise.com,SAFE,SAFE,0.0,reputation,none
+https://www.ebay.com,SAFE,SAFE,0.0,reputation,none
+https://www.etsy.com,SAFE,SAFE,0.001,reputation,none
+https://www.flipkart.com,SAFE,SAFE,0.004,reputation,none
+https://www.myntra.com,SAFE,SAFE,0.0,reputation,none
+https://www.argos.co.uk,SAFE,SAFE,0.0,reputation,none
+https://www.johnlewis.com,SAFE,SAFE,0.001,reputation,none
+https://www.tesco.com,SAFE,SAFE,0.001,reputation,none
+https://www.sainsburys.co.uk,SAFE,SAFE,0.003,reputation,none
+https://www.booking.com,SAFE,SAFE,0.0,reputation,none
+https://www.airbnb.com,SAFE,SAFE,0.004,reputation,none
+https://www.expedia.com,SAFE,SAFE,0.0,reputation,none
+https://www.skyscanner.net,SAFE,SAFE,0.003,reputation,none
+https://www.makemytrip.com,SAFE,SAFE,0.001,reputation,none
+https://www.trainline.com,SAFE,SAFE,0.001,reputation,none
+https://www.uber.com,SAFE,SAFE,0.0,reputation,none
+https://www.gov.uk,SAFE,SAFE,0.0,reputation,none
+https://www.nhs.uk,SAFE,SAFE,0.002,reputation,none
+https://www.irs.gov,SAFE,SAFE,0.0,reputation,none
+https://www.india.gov.in,SAFE,SAFE,0.0,reputation,none
+https://www.incometax.gov.in,SAFE,SAFE,0.005,reputation,none
+https://www.ucl.ac.uk,SAFE,SAFE,0.001,reputation,none
+https://www.ox.ac.uk,SAFE,SAFE,0.0,reputation,none
+https://www.cam.ac.uk,SAFE,SAFE,0.0,reputation,none
+https://www.mit.edu,SAFE,SAFE,0.0,reputation,none
+https://www.harvard.edu,SAFE,SAFE,0.001,reputation,none
+https://www.who.int,SAFE,SAFE,0.002,reputation,none
+https://www.cdc.gov,SAFE,SAFE,0.0,reputation,none
+https://www.nasa.gov,SAFE,SAFE,0.001,reputation,none
+https://europa.eu,SAFE,SAFE,0.05,reputation,none
+https://www.iso.org,SAFE,SAFE,0.0,reputation,none
+https://www.bbc.co.uk,SAFE,SAFE,0.0,reputation,none
+https://www.theguardian.com,SAFE,SAFE,0.001,reputation,none
+https://www.nytimes.com,SAFE,SAFE,0.0,reputation,none
+https://www.reuters.com,SAFE,SAFE,0.0,reputation,none
+https://www.economist.com,SAFE,SAFE,0.001,reputation,none
+https://www.netflix.com,SAFE,SAFE,0.032,reputation,none
+https://www.spotify.com,SAFE,SAFE,0.003,reputation,none
+https://www.disneyplus.com,SAFE,SAFE,0.001,reputation,none
+https://www.twitch.tv,SAFE,SAFE,0.0,reputation,none
+https://www.imdb.com,SAFE,SAFE,0.0,reputation,none
+https://www.dropbox.com,SAFE,SAFE,0.029,reputation,none
+https://www.notion.so,SAFE,SAFE,0.003,reputation,none
+https://www.atlassian.com,SAFE,SAFE,0.001,reputation,none
+https://slack.com,SAFE,SAFE,0.002,reputation,none
+https://zoom.us,SAFE,SAFE,0.025,reputation,none
+https://www.adobe.com,SAFE,SAFE,0.001,reputation,none
+https://www.salesforce.com,SAFE,SAFE,0.002,reputation,none
+https://www.oracle.com,SAFE,SAFE,0.0,reputation,none
+https://www.ibm.com,SAFE,SAFE,0.0,reputation,none
+https://www.intel.com,SAFE,SAFE,0.0,reputation,none
+https://www.wordpress.org,SAFE,SAFE,0.0,reputation,none
+https://www.shopify.com,SAFE,SAFE,0.001,reputation,none
+https://www.squarespace.com,SAFE,SAFE,0.014,reputation,none
+https://www.godaddy.com,SAFE,SAFE,0.004,reputation,none
+https://www.namecheap.com,SAFE,SAFE,0.003,reputation,none
+https://duckduckgo.com,SAFE,SAFE,0.096,reputation,none
+https://www.bing.com,SAFE,SAFE,0.0,reputation,none
+https://www.yahoo.com,SAFE,SAFE,0.0,reputation,none
+https://outlook.live.com,SAFE,SAFE,0.125,reputation,none
+https://mail.google.com,SAFE,SAFE,0.133,reputation,none
+https://accounts.google.com/signin,SAFE,SAFE,0.95,reputation,none
+https://login.microsoftonline.com,SAFE,SAFE,0.238,reputation,none
+https://appleid.apple.com/sign-in,SAFE,SAFE,0.928,reputation,none
+https://signin.aws.amazon.com/console,SAFE,SAFE,0.644,reputation,none
+https://secure.bankofamerica.com/login,SAFE,SAFE,1.0,reputation,none
+https://en.wikipedia.org/wiki/Phishing,SAFE,SAFE,0.001,reputation,none
+https://github.com/openai/whisper,SAFE,SAFE,0.022,reputation,none
+https://www.amazon.co.uk/gp/css/order-history,SAFE,SAFE,0.197,reputation,none
+https://www.paypal.com/uk/signin,SAFE,SAFE,0.879,reputation,none
+https://netbanking.hdfcbank.com,SAFE,SAFE,0.344,reputation,none
+http://paypal-secure-login.xyz/verify,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,1.0,ml-lexical (high),none (ML/rules on structure)
+http://account-verify-appleid.top/signin,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.999,ml-lexical (high),none (ML/rules on structure)
+http://hdfc-netbanking-kyc-update.xyz/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.996,ml-lexical (high),none (ML/rules on structure)
+http://amazon-refund-department.online/claim,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.907,ml-lexical (high),none (ML/rules on structure)
+http://sbi-online-secure-verify.tk/update,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.995,ml-lexical (high),none (ML/rules on structure)
+http://netflix-billing-update.info/account,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.997,ml-lexical (high),none (ML/rules on structure)
+http://microsoft365-login-verify.zip/office,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.994,ml-lexical (high),none (ML/rules on structure)
+http://dhl-parcel-redelivery-fee.top/pay,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.898,ml-lexical (high),none (ML/rules on structure)
+http://irs-tax-refund-claim.online/gov,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.86,ml-lexical (high),none (ML/rules on structure)
+http://coinbase-wallet-unlock-verify.xyz/secure,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.994,ml-lexical (high),none (ML/rules on structure)
+http://icici-bank-kyc-update.tk/details,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.966,ml-lexical (high),none (ML/rules on structure)
+http://barclays-secure-message.top/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.97,ml-lexical (high),none (ML/rules on structure)
+http://hsbc-account-suspended-verify.info/unlock,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.984,ml-lexical (high),none (ML/rules on structure)
+http://natwest-online-secure.xyz/verify-now,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.989,ml-lexical (high),none (ML/rules on structure)
+http://santander-verify-account.online/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.993,ml-lexical (high),none (ML/rules on structure)
+http://facebook-security-check.tk/confirm,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.956,ml-lexical (high),none (ML/rules on structure)
+http://instagram-copyright-appeal.xyz/verify,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.992,ml-lexical (high),none (ML/rules on structure)
+http://linkedin-account-restricted.top/appeal,PHISHY-LEXICAL,SUSPICIOUS,0.82,ml-lexical (moderate),none (ML/rules on structure)
+http://whatsapp-verify-code.info/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.999,ml-lexical (high),none (ML/rules on structure)
+http://gmail-storage-full-verify.xyz/upgrade,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.988,ml-lexical (high),none (ML/rules on structure)
+http://outlook-password-expiry.top/renew,PHISHY-LEXICAL,SUSPICIOUS,0.824,ml-lexical (moderate),none (ML/rules on structure)
+http://apple-icloud-locked-verify.online/unlock,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.935,ml-lexical (high),none (ML/rules on structure)
+http://amazon-prime-refund.tk/claim-now,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.958,ml-lexical (high),none (ML/rules on structure)
+http://flipkart-big-billion-prize.xyz/claim,PHISHY-LEXICAL,SUSPICIOUS,0.841,ml-lexical (moderate),none (ML/rules on structure)
+http://sbi-rewards-redeem-points.online/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.94,ml-lexical (high),none (ML/rules on structure)
+http://hdfc-credit-card-blocked.top/verify,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.973,ml-lexical (high),none (ML/rules on structure)
+http://axis-bank-kyc-pending.info/update,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.96,ml-lexical (high),none (ML/rules on structure)
+http://netflix-payment-declined.xyz/update-card,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.99,ml-lexical (high),none (ML/rules on structure)
+http://spotify-premium-free.top/redeem,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.938,ml-lexical (high),none (ML/rules on structure)
+http://dpd-parcel-fee-unpaid.online/pay,PHISHY-LEXICAL,SUSPICIOUS,0.806,ml-lexical (moderate),none (ML/rules on structure)
+http://royalmail-redelivery.xyz/fee,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.946,ml-lexical (high),none (ML/rules on structure)
+http://evri-parcel-held.top/reschedule,PHISHY-LEXICAL,SUSPICIOUS,0.639,ml-lexical (moderate),none (ML/rules on structure)
+http://hmrc-tax-rebate-claim.online/gov-uk,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.958,ml-lexical (high),none (ML/rules on structure)
+http://dvla-vehicle-tax-refund.xyz/claim,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.859,ml-lexical (high),none (ML/rules on structure)
+http://nhs-covid-pass-verify.top/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.998,ml-lexical (high),none (ML/rules on structure)
+http://gov-uk-benefit-update.info/verify,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.992,ml-lexical (high),none (ML/rules on structure)
+http://microsoft-account-unusual-signin.xyz/secure,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.99,ml-lexical (high),none (ML/rules on structure)
+http://google-security-alert-verify.top/account,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.99,ml-lexical (high),none (ML/rules on structure)
+http://binance-account-verify.online/kyc,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.99,ml-lexical (high),none (ML/rules on structure)
+http://metamask-wallet-restore.xyz/seed,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.892,ml-lexical (high),none (ML/rules on structure)
+http://crypto-airdrop-claim-now.top/connect,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.897,ml-lexical (high),none (ML/rules on structure)
+http://usps-package-redelivery.info/fee,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.859,ml-lexical (high),none (ML/rules on structure)
+http://192.168.10.45/wp-admin/paypal/login.php,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,1.0,ml-lexical (high),none (ML/rules on structure)
+http://45.83.122.9/secure/appleid/verify.html,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.999,ml-lexical (high),none (ML/rules on structure)
+http://paypal.com.verify-account.tk/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,1.0,ml-lexical (high),none (ML/rules on structure)
+https://secure-login.account-update.verify.hdfcbank.com.badsite.ru/,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.999,ml-lexical (high),none (ML/rules on structure)
+http://xn--pypal-4ve.com/signin,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.962,ml-lexical (high),none (ML/rules on structure)
+https://microsoft-update.zip/office365,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.911,ml-lexical (high),none (ML/rules on structure)
+https://google-docs-share.mov/view,PHISHY-LEXICAL,SUSPICIOUS (weak on ML — relies on rules/feeds),0.435,ml-lexical (low),none (ML/rules on structure)
+http://bit.ly/3xF4kzQ-verify-account,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.999,ml-lexical (high),none (ML/rules on structure)
+http://tinyurl.com/secure-bank-login-xyz,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.999,ml-lexical (high),none (ML/rules on structure)
+http://free-gift-card-claim.tk/amazon-500,PHISHY-LEXICAL,SUSPICIOUS,0.742,ml-lexical (moderate),none (ML/rules on structure)
+http://you-have-won-iphone15.xyz/claim-prize,PHISHY-LEXICAL,SUSPICIOUS,0.691,ml-lexical (moderate),none (ML/rules on structure)
+http://lottery-winner-notification.top/kbc,PHISHY-LEXICAL,SUSPICIOUS,0.798,ml-lexical (moderate),none (ML/rules on structure)
+http://testsafebrowsing.appspot.com/s/phishing.html,TEST-PAGE,MALICIOUS,0.816,Google Safe Browsing official PHISHING test page (needs GOOGLE_SAFEBROWSING_API_KEY),Safe Browsing key / feeds
+http://testsafebrowsing.appspot.com/s/malware.html,TEST-PAGE,MALICIOUS,0.912,Google Safe Browsing official MALWARE test page (needs key),Safe Browsing key / feeds
+http://testsafebrowsing.appspot.com/s/unwanted.html,TEST-PAGE,MALICIOUS,0.949,Google Safe Browsing official UNWANTED-SOFTWARE test page (needs key),Safe Browsing key / feeds
+http://testsafebrowsing.appspot.com/s/badware.html,TEST-PAGE,MALICIOUS,0.948,Google Safe Browsing test page variant (needs key),Safe Browsing key / feeds
+https://testsafebrowsing.appspot.com/s/phishing.html,TEST-PAGE,MALICIOUS,0.621,HTTPS variant of the SB phishing test page (needs key),Safe Browsing key / feeds
+https://www.amtso.org/check-desktop-phishing-page/,TEST-PAGE,MALICIOUS when VirusTotal answers (12/92 engines on 2026-10-01); may read SAFE in a big batch on a free VT key (rate-limited),0.077,"AMTSO phishing test page — known to VirusTotal engines, NOT listed by Google Safe Browsing",VirusTotal key with quota
+https://www.amtso.org/check-desktop-malware-page/,TEST-PAGE,SAFE (no URL-reputation source lists it),0.124,"AMTSO malware test LANDING page — VirusTotal 0/94, not on Safe Browsing; endpoint AV acts on the download, not this URL","endpoint AV, not URL reputation"
+https://www.amtso.org/check-desktop-potentially-unwanted-application/,TEST-PAGE,SAFE (no URL-reputation source lists it),0.117,"AMTSO PUA test LANDING page — not in VirusTotal's database, not on Safe Browsing","endpoint AV, not URL reputation"
+http://malware.wicar.org/data/eicar.com,TEST-PAGE,MALICIOUS,0.331,WICAR EICAR test download (harmless AV test string),Safe Browsing key / feeds
+https://wicar.org/data/eicar.com,TEST-PAGE,MALICIOUS,0.031,WICAR EICAR test file over HTTPS,Safe Browsing key / feeds
+https://www.cnn.com,SAFE,SAFE,0.0,reputation,none
+https://www.ft.com,SAFE,SAFE,0.0,reputation,none
+https://www.wikipedia.org/wiki/Cybersecurity,SAFE,SAFE,0.001,reputation,none
+https://calendar.google.com,SAFE,SAFE,0.028,reputation,none
+https://drive.google.com,SAFE,SAFE,0.144,reputation,none
+https://www.gov.uk/log-in-register-hmrc-online-services,SAFE,SAFE,0.164,reputation,none
+https://www.icicibank.com/personal-banking,SAFE,SAFE,0.119,reputation,none
+https://web.telegram.org,SAFE,SAFE,0.556,reputation,none
+https://www.cloudflare.com/learning/,SAFE,SAFE,0.076,reputation,none
+https://support.apple.com,SAFE,SAFE,0.043,reputation,none
+http://amazon-account-locked-verify.xyz/signin,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.997,ml-lexical,none (ML/rules on structure)
+http://paypa1-secure.com/login,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,1.0,ml-lexical,none (ML/rules on structure)
+http://hmrc-refund-gov-uk.top/claim,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.978,ml-lexical,none (ML/rules on structure)
+http://sbi-yono-kyc-update.online/verify,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.983,ml-lexical,none (ML/rules on structure)
+http://netflix-account-hold.tk/billing,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.979,ml-lexical,none (ML/rules on structure)
+http://dhl-express-customs-fee.xyz/pay,PHISHY-LEXICAL,SUSPICIOUS or MALICIOUS,0.965,ml-lexical,none (ML/rules on structure)

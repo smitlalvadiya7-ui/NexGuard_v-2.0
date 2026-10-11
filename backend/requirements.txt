@@ -1,0 +1,63 @@
+# NexGuard AI — backend dependencies.
+#
+# EVERY package is pinned (OWASP A06): an unpinned `pip install` can silently
+# pull a vulnerable release and makes builds non-reproducible. The pins below
+# match the versions the test suite actually runs against.
+#
+# requirements.lock is the hash-pinned resolution of this file, produced with:
+#   uv pip compile backend/requirements.txt --generate-hashes \
+#       --python-version 3.14 -o backend/requirements.lock
+# Regenerate it whenever a pin changes here, and install from the lock in
+# CI/production:  pip install --require-hashes -r requirements.lock
+fastapi==0.136.3
+uvicorn[standard]==0.48.0
+websockets==16.0
+python-multipart==0.0.30
+pydantic==2.13.4
+python-dotenv==1.2.2
+requests==2.34.2
+sqlalchemy==2.0.49
+pillow==12.2.0
+pytesseract==0.3.13
+pyzbar==0.1.9
+opencv-python==4.13.0.92
+numpy==2.4.6
+SpeechRecognition==3.16.1
+reportlab==4.5.1
+google-api-python-client==2.198.0
+google-auth==2.56.2
+google-auth-oauthlib==1.4.0
+google-auth-httplib2==0.4.0
+openai-whisper==20250625
+python-jose[cryptography]==3.5.0
+bcrypt==5.0.0
+# Optional MP3/MP4 conversion in voice analyzer: install FFmpeg separately (already required for voice scanning)
+# --- Machine learning ---------------------------------------------------------
+# Runtime (model load + inference on the scan path). Pinned to versions verified
+# on Python 3.14 — cp314 wheels are published for all of these.
+scikit-learn==1.9.0
+xgboost==3.2.0
+joblib==1.5.3
+scipy==1.17.1          # hard scikit-learn runtime dependency; pinned for reproducibility
+# pandas: used only by ml/train.py (offline training), not the live scan path.
+pandas==3.0.3
+# shap: optional per-prediction explainability (ml/explain.py); import-guarded.
+shap==0.52.0
+# --- AI-image origin detector (backend/image_origin.py) -----------------------
+# The local image classifier layer. Without these the image scan can only read
+# metadata/EXIF and returns UNCERTAIN ("could not tell AI from real") for every
+# metadata-free image. CPU wheels are enough — no GPU required.
+transformers==5.9.0
+torch==2.12.0
+confusable_homoglyphs==3.3.1
+rapidfuzz==3.14.5
+tldextract==5.3.1        # PSL registrable-domain parsing (typosquat + tenant platforms)
+beautifulsoup4==4.15.0
+stripe==15.3.1
+cryptography==48.0.0     # TLS-certificate parsing in apis/ssl_cert.py (DER decode)
+# --- Scale (optional; only used when env-switched) ----------------------------
+# Redis cache + distributed rate-limiting — active only when REDIS_URL is set.
+redis==8.0.1
+# Postgres driver for SQLAlchemy — active only when DATABASE_URL points at it
+# (postgresql+psycopg://…). SQLite remains the zero-config default.
+psycopg[binary]==3.3.4
