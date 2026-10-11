@@ -47,7 +47,6 @@ backend/ml/*.bak
 
 # ================= Personal / internal notes =================
 _unused/
-.claude/
 .vscode/
 Technical task.txt
 NEXGUARD_COMPLETE_GUIDE.md
