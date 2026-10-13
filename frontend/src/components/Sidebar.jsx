@@ -1,6 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext.jsx";
 import {
+  LogoMark,
   ShieldIcon,
   ScanIcon,
   ClockIcon,
@@ -47,7 +48,7 @@ export default function Sidebar() {
   return (
     <aside className="flex h-screen w-60 shrink-0 flex-col border-r border-border bg-panel">
       <div className="flex items-center gap-2 px-4 py-5">
-        <ShieldIcon size={22} className="shrink-0 text-accent" />
+        <LogoMark size={28} className="shrink-0" />
         <div className="min-w-0 leading-tight">
           <p className="truncate text-sm font-semibold text-text">NexGuard AI</p>
           <p className="truncate text-xs text-muted">Cyber Defense Platform</p>

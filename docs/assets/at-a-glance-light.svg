@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="880" height="140" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="title">
+<title id="title">NexGuard AI at a glance: 95.6% accuracy, 9 scan types, 3 ways to use it, 1,200+ automated tests</title>
+<rect x="0.5" y="4.5" width="207.0" height="130" rx="12" fill="#e8ecfd" stroke="#3552d6" stroke-width="1"/>
+<text x="18.0" y="62" font-size="38" font-weight="700" fill="#3552d6" text-anchor="start">95.6%</text>
+<text x="18.0" y="94" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Accuracy</text>
+<text x="18.0" y="116" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">URL model, 4,286 test URLs</text>
+<rect x="224.5" y="4.5" width="207.0" height="130" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="242.0" y="62" font-size="38" font-weight="700" fill="#1f2328" text-anchor="start">9</text>
+<text x="242.0" y="94" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Scan types</text>
+<text x="242.0" y="116" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">From links to voice notes</text>
+<rect x="448.5" y="4.5" width="207.0" height="130" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="466.0" y="62" font-size="38" font-weight="700" fill="#1f2328" text-anchor="start">3</text>
+<text x="466.0" y="94" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Ways to use it</text>
+<text x="466.0" y="116" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Web, Chrome and Telegram</text>
+<rect x="672.5" y="4.5" width="207.0" height="130" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="690.0" y="62" font-size="38" font-weight="700" fill="#1f2328" text-anchor="start">1,200+</text>
+<text x="690.0" y="94" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Automated tests</text>
+<text x="690.0" y="116" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Backend, web, extension</text>
+</svg>

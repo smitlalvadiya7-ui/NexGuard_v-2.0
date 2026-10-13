@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext.jsx";
-import { ShieldIcon } from "../components/Icons.jsx";
+import { LogoMark } from "../components/Icons.jsx";
 
 function tabClass(active) {
   return `rounded-md py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
@@ -67,7 +67,7 @@ export default function Login() {
     <div className="flex min-h-screen items-center justify-center bg-bg px-4">
       <div className="w-full max-w-sm rounded-xl border border-border bg-panel p-8 shadow-sm">
         <div className="mb-6 flex flex-col items-center gap-2 text-center">
-          <ShieldIcon size={28} className="text-accent" />
+          <LogoMark size={40} />
           <h1 className="text-lg font-semibold text-text">NexGuard AI</h1>
           <p className="text-sm text-muted">Cyber Defense Platform</p>
         </div>

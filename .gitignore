@@ -61,9 +61,10 @@ scripts/daily_benchmark.cmd
 scripts/daily_corpus.cmd
 scripts/schedule_daily_jobs.ps1
 
-# docs: only the workflow image is published
+# docs: only the workflow image and the README assets are published
 docs/*
 !docs/workflow.png
+!docs/assets/
 
 # ================= OS =================
 .DS_Store

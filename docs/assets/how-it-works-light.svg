@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="880" height="560" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="title desc">
+<title id="title">How NexGuard AI works</title>
+<desc id="desc">Six kinds of input go through four engine steps (read, extract, check in parallel, score) and come out as a SAFE, SUSPICIOUS or MALICIOUS verdict shown on the dashboard, in Chrome and on Telegram.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3552d6"/></marker></defs>
+<text x="16" y="24" font-size="11" font-weight="700" fill="#3552d6" text-anchor="start" letter-spacing="1.2">INPUT</text>
+<text x="250" y="24" font-size="11" font-weight="700" fill="#3552d6" text-anchor="start" letter-spacing="1.2">NEXGUARD ENGINE</text>
+<text x="684" y="24" font-size="11" font-weight="700" fill="#3552d6" text-anchor="start" letter-spacing="1.2">RESULT</text>
+<rect x="16" y="36" width="196" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<rect x="16" y="46" width="3" height="28" rx="1.5" fill="#3552d6"/>
+<text x="30" y="56" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Link</text>
+<text x="30" y="73" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Any web address</text>
+<rect x="16" y="92" width="196" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<rect x="16" y="102" width="3" height="28" rx="1.5" fill="#3552d6"/>
+<text x="30" y="112" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Email</text>
+<text x="30" y="129" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">.eml file, pasted or Gmail</text>
+<rect x="16" y="148" width="196" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<rect x="16" y="158" width="3" height="28" rx="1.5" fill="#3552d6"/>
+<text x="30" y="168" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">QR code</text>
+<text x="30" y="185" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Photo of a QR code</text>
+<rect x="16" y="204" width="196" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<rect x="16" y="214" width="3" height="28" rx="1.5" fill="#3552d6"/>
+<text x="30" y="224" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Screenshot</text>
+<text x="30" y="241" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Chat, SMS or web page</text>
+<rect x="16" y="260" width="196" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<rect x="16" y="270" width="3" height="28" rx="1.5" fill="#3552d6"/>
+<text x="30" y="280" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Voice</text>
+<text x="30" y="297" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Call recording or voice note</text>
+<rect x="16" y="316" width="196" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<rect x="16" y="326" width="3" height="28" rx="1.5" fill="#3552d6"/>
+<text x="30" y="336" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Photo</text>
+<text x="30" y="353" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Real or AI-made?</text>
+<rect x="16" y="380" width="196" height="168" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="30" y="404" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Use it from</text>
+<circle cx="34" cy="430" r="4" fill="#3552d6"/>
+<text x="46" y="434" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start">Web dashboard</text>
+<text x="46" y="449" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Every scan type</text>
+<circle cx="34" cy="470" r="4" fill="#3552d6"/>
+<text x="46" y="474" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start">Chrome extension</text>
+<text x="46" y="489" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Checks pages as they open</text>
+<circle cx="34" cy="510" r="4" fill="#3552d6"/>
+<text x="46" y="514" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="start">Telegram bot</text>
+<text x="46" y="529" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Send it, get a verdict</text>
+<rect x="250" y="36" width="400" height="512" rx="14" fill="#f3f5fe" stroke="#3552d6" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="262" y="48" width="376" height="72" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="282" cy="68" r="11" fill="#3552d6"/><text x="282" y="72" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="300" y="73" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Read the input</text>
+<text x="274" y="94" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Decode the QR, read screenshot text (OCR),</text>
+<text x="274" y="110" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">turn speech into text (Whisper), parse the email</text>
+<rect x="262" y="130" width="376" height="72" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="282" cy="150" r="11" fill="#3552d6"/><text x="282" y="154" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="300" y="155" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Pull out what matters</text>
+<text x="274" y="176" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Links (redirects followed, short links expanded),</text>
+<text x="274" y="192" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">sender, SPF / DKIM / DMARC and the message text</text>
+<rect x="262" y="212" width="376" height="210" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="282" cy="232" r="11" fill="#3552d6"/><text x="282" y="236" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="300" y="237" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Check everything at the same time</text>
+<rect x="274" y="252" width="112" height="74" rx="8" fill="#e8ecfd"/>
+<text x="284" y="276" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Rules</text>
+<text x="284" y="296" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">URL tricks,</text>
+<text x="284" y="311" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">scam words</text>
+<rect x="394" y="252" width="112" height="74" rx="8" fill="#e8ecfd"/>
+<text x="404" y="276" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">ML model</text>
+<text x="404" y="296" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">21,427-URL</text>
+<text x="404" y="311" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">dataset</text>
+<rect x="514" y="252" width="112" height="74" rx="8" fill="#e8ecfd"/>
+<text x="524" y="276" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Page content</text>
+<text x="524" y="296" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Login forms,</text>
+<text x="524" y="311" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">fake brands</text>
+<rect x="274" y="336" width="112" height="74" rx="8" fill="#e8ecfd"/>
+<text x="284" y="360" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Look-alikes</text>
+<text x="284" y="380" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">71 brands,</text>
+<text x="284" y="395" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">homoglyphs</text>
+<rect x="394" y="336" width="112" height="74" rx="8" fill="#e8ecfd"/>
+<text x="404" y="360" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Threat intel</text>
+<text x="404" y="380" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">7 live</text>
+<text x="404" y="395" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">sources</text>
+<rect x="514" y="336" width="112" height="74" rx="8" fill="#e8ecfd"/>
+<text x="524" y="360" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Domain facts</text>
+<text x="524" y="380" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Age, SSL,</text>
+<text x="524" y="395" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">DNS, location</text>
+<rect x="262" y="432" width="376" height="60" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="282" cy="452" r="11" fill="#3552d6"/><text x="282" y="456" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="300" y="457" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Score it</text>
+<text x="274" y="479" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Weighted blend of every signal into a 0 to 100 risk score</text>
+<text x="262" y="516" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Photos take their own path: file metadata (proof) plus an</text>
+<text x="262" y="532" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">AI-image model (probability).</text>
+<rect x="684" y="36" width="180" height="264" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="704" cy="58" r="11" fill="#3552d6"/><text x="704" y="62" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="722" y="63" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Verdict</text>
+<rect x="696" y="80" width="156" height="40" rx="8" fill="#ffebe9"/>
+<rect x="696" y="80" width="4" height="40" rx="2" fill="#cf222e"/>
+<text x="710" y="105" font-size="13" font-weight="700" fill="#cf222e" text-anchor="start">MALICIOUS</text>
+<text x="842" y="105" font-size="11" font-weight="400" fill="#59636e" text-anchor="end">70 to 100</text>
+<rect x="696" y="128" width="156" height="40" rx="8" fill="#fff8c5"/>
+<rect x="696" y="128" width="4" height="40" rx="2" fill="#9a6700"/>
+<text x="710" y="153" font-size="13" font-weight="700" fill="#9a6700" text-anchor="start">SUSPICIOUS</text>
+<text x="842" y="153" font-size="11" font-weight="400" fill="#59636e" text-anchor="end">40 to 69</text>
+<rect x="696" y="176" width="156" height="40" rx="8" fill="#dafbe1"/>
+<rect x="696" y="176" width="4" height="40" rx="2" fill="#1a7f37"/>
+<text x="710" y="201" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="start">SAFE</text>
+<text x="842" y="201" font-size="11" font-weight="400" fill="#59636e" text-anchor="end">0 to 39</text>
+<text x="698" y="240" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Plus a confidence level</text>
+<text x="698" y="257" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">and the reasons, in</text>
+<text x="698" y="274" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">plain words.</text>
+<rect x="684" y="316" width="180" height="232" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="704" cy="338" r="11" fill="#3552d6"/><text x="704" y="342" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="722" y="343" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Where you see it</text>
+<text x="698" y="378" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Dashboard</text>
+<text x="698" y="395" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">History and PDF report</text>
+<text x="698" y="432" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Chrome</text>
+<text x="698" y="449" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Warning page, link hover</text>
+<text x="698" y="486" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Telegram</text>
+<text x="698" y="503" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">A reply in the chat</text>
+<path d="M214 214 H244" stroke="#3552d6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M652 168 H678" stroke="#3552d6" stroke-width="2.5" marker-end="url(#arrow)"/>
+</svg>

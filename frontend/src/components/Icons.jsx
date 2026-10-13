@@ -4,6 +4,46 @@
  * small local component so the bundle stays dependency-free.
  */
 
+import { useId } from "react";
+
+/*
+ * The NexGuard logo mark (same artwork as docs/assets/logo-mark.svg and the
+ * favicon). Brand colours are fixed, not currentColor, so the mark looks the
+ * same in both themes. useId keeps the gradient id unique per instance.
+ */
+export function LogoMark({ size = 24, className = "", ...props }) {
+  const gradientId = `ng-shield-${useId().replace(/:/g, "")}`;
+  return (
+    <svg
+      viewBox="8 8 112 112"
+      width={size}
+      height={size}
+      aria-hidden="true"
+      className={className}
+      {...props}
+    >
+      <defs>
+        <linearGradient id={gradientId} gradientUnits="userSpaceOnUse" x1="30" y1="12" x2="98" y2="116">
+          <stop offset="0" stopColor="#7d92ff" />
+          <stop offset="1" stopColor="#3552d6" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M64 12 L106 27 V60 C106 87 88 106 64 116 C40 106 22 87 22 60 V27 Z"
+        fill={`url(#${gradientId})`}
+      />
+      <path
+        d="M48 83 V45 L80 83 V45"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function IconBase({ size = 20, className = "", children, ...props }) {
   return (
     <svg
